@@ -1,0 +1,7 @@
+<!-- <router-outlet></router-outlet> -->
+<section class="catalog">
+  <div class="catalog__item" *ngFor="let item of catalog" (click)="onSelect(item)">
+    <h3 class="catalog__item-title">{{ item.title }}</h3>
+    <img src="{{ item.src }}" alt="{{ item.title }}">
+  </div>
+</section>
