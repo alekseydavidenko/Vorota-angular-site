@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CatalogRoutingModule } from './catalog-routing.module';
 import { CatalogComponent } from './catalog.component';
-import { SectionsComponent } from './sections/sections.component';
+// import { SectionsComponent } from './sections/sections.component';
 import { StreetComponent } from './street/street.component';
 import { AntiFireComponent } from './anti-fire/anti-fire.component';
 import { AvtomaticaComponent } from './avtomatica/avtomatica.component';
@@ -20,7 +20,7 @@ import { RampAndTableComponent } from './ramp-and-table/ramp-and-table.component
   ],
   declarations: [
     CatalogComponent,
-    SectionsComponent,
+    // SectionsComponent,
     StreetComponent,
     AntiFireComponent,
     AvtomaticaComponent,

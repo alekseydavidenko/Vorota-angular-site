@@ -52,6 +52,12 @@ h1 {
   position: relative;
   cursor: pointer;
 }
+.catalog__item:hover {
+  text-shadow: 0px 0px 15px rgb(255, 230, 0);
+  -webkit-transition: all .6s;
+       -o-transition: all .6s;
+          transition: all .6s;
+}
 .catalog__item img {
   width: 100%;
 }
@@ -64,12 +70,21 @@ h1 {
 .catalog__item-title {
   position: absolute;
   width: 100%;
+  right: 0;
   background-color: rgba(0,0,0,.7);
   padding: 10px;
   text-align: center;
   font-size: 18px;
   color: #fff;
   text-transform: uppercase;
+}
+.catalog__item-title:hover {
+  text-shadow: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgb(0, 0, 0);
+  -webkit-transition: all .6s;
+       -o-transition: all .6s;
+          transition: all .6s;
 }
 @media screen and (max-width: 1200px){
   .catalog__item:nth-child(3n+3) {

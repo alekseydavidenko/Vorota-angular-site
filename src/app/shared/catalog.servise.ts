@@ -33,12 +33,36 @@ const catalogRollet = [
   new Catalog(2, 'Из стальных профилеей с внутривальным приводом', 'assets/img/catalog/rollet-steel.jpg', 'rollet-steel'),
   new Catalog(3, 'Из стальных профилеей с навальным приводом', 'assets/img/catalog/rollet-steel-shaft.jpg', 'rollet-steel-shaft'),
 ];
+const catalogSections = [
+  new Catalog(1, 'С пружинами растяжения стандартных размеров', 'assets/img/catalog/section-standart.jpg', 'section-standart'),
+  new Catalog(2, 'С пружинами растяжения', 'assets/img/catalog/section-stretching.jpg', 'section-stretching'),
+  new Catalog(3, 'С торсионным механизмом', 'assets/img/catalog/section-torsional.jpg', 'section-torsional'),
+  new Catalog(4, 'Промышленые', 'assets/img/catalog/section-industrial.jpg', 'section-industrial'),
+  new Catalog(5, 'Панорамные', 'assets/img/catalog/section-panorama.jpg', 'section-panorama'),
+];
+const catalogStreet = [
+  new Catalog(1, 'Откатные ворота', 'assets/img/catalog/street-recoiling.jpg', 'street-recoiling'),
+  new Catalog(2, 'Распашные ворота', 'assets/img/catalog/street-swinging.jpg', 'street-swinging'),
+  new Catalog(3, 'Калитки', 'assets/img/catalog/street-wickets.jpg', 'street-wickets'),
+];
+const catalogSpeedRoll = [
+  new Catalog(1, 'Для внутреннего использования', 'assets/img/catalog/speed-roll-inside.jpg', 'speed-roll-inside'),
+  new Catalog(2, 'Для наружного использования', 'assets/img/catalog/speed-roll-outside.jpg', 'speed-roll-outside'),
+  new Catalog(3, 'Для пещивой промышленности', 'assets/img/catalog/speed-roll-food.jpg', 'speed-roll-food'),
+  new Catalog(4, 'Для морозильных камер', 'assets/img/catalog/speed-roll-cold.jpg', 'speed-roll-cold'),
+  new Catalog(5, 'Для чистых помещений', 'assets/img/catalog/speed-roll-clean.jpg', 'speed-roll-clean'),
+  new Catalog(6, 'Пленочные завесы', 'assets/img/catalog/film-veils.jpg', 'film-veils'),
+  new Catalog(7, 'Пленочные распашные', 'assets/img/catalog/film-swinging.jpg', 'film-swinging'),
+];
 
 const catalogPromise = Promise.resolve(catalog);
 const catalogAntiFirePromise = Promise.resolve(catalogAntiFire);
 const catalogAvtomaticPromise = Promise.resolve(catalogAvtomatic);
 const catalogBarrierPromise = Promise.resolve(catalogBarrier);
 const catalogRolletPromise = Promise.resolve(catalogRollet);
+const catalogSectionsPromise = Promise.resolve(catalogSections);
+const catalogStreetPromise = Promise.resolve(catalogStreet);
+const catalogSpeedRollPromise = Promise.resolve(catalogSpeedRoll);
 
 @Injectable()
 export class CatalogServise {
@@ -56,5 +80,14 @@ export class CatalogServise {
   }
   getCatalogRollet(): Promise<Catalog[]> {
     return catalogRolletPromise;
+  }
+  getCatalogSections(): Promise<Catalog[]> {
+    return catalogSectionsPromise;
+  }
+  getCatalogStreet(): Promise<Catalog[]> {
+    return catalogStreetPromise;
+  }
+  getCatalogSpeedRoll(): Promise<Catalog[]> {
+    return catalogSpeedRollPromise;
   }
 }

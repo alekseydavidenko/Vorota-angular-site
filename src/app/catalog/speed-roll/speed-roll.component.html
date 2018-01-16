@@ -1,3 +1,7 @@
-<p>
-  speed-roll works!
-</p>
+<h2 class="title">Скоростные ворота</h2>
+<section class="catalog">
+  <div class="catalog__item" *ngFor="let item of catalogSpeedRoll" (click)="onSelect(item)">
+    <h3 class="catalog__item-title">{{ item.title }}</h3>
+    <img src="{{ item.src }}" alt="{{ item.title }}">
+  </div>
+</section>
