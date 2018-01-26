@@ -11,14 +11,15 @@ import { Catalog } from '../../shared/catalog';
 })
 export class RampAndTableComponent implements OnInit {
 
+  public catalogRampEndTable: Catalog[];
+
   constructor(
     @Inject(forwardRef(() => Router))
     private router: Router,
     @Inject(forwardRef(() => ActivatedRoute))
     private activatedRouter: ActivatedRoute,
     @Inject(forwardRef(() => CatalogServise))
-    private catalogServise: CatalogServise,
-    private catalogRampEndTable: Catalog[]
+    private catalogServise: CatalogServise
   ) { }
 
   ngOnInit() {

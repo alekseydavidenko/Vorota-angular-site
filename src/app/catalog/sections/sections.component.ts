@@ -11,14 +11,15 @@ import { Catalog } from '../../shared/catalog';
 })
 export class SectionsComponent implements OnInit {
 
+  public catalogSections: Catalog[];
+
   constructor(
     @Inject(forwardRef(() => Router))
     private router: Router,
     @Inject(forwardRef(() => ActivatedRoute))
     private activatedRouter: ActivatedRoute,
     @Inject(forwardRef(() => CatalogServise))
-    private catalogServise: CatalogServise,
-    private catalogSections: Catalog[]
+    private catalogServise: CatalogServise
   ) { }
 
   ngOnInit() {

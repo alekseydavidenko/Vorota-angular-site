@@ -11,14 +11,15 @@ import { Catalog } from '../../shared/catalog';
 })
 export class SpeedRollComponent implements OnInit {
 
+  public catalogSpeedRoll: Catalog[];
+
   constructor(
     @Inject(forwardRef(() => Router))
     private router: Router,
     @Inject(forwardRef(() => ActivatedRoute))
     private activatedRouter: ActivatedRoute,
     @Inject(forwardRef(() => CatalogServise))
-    private catalogServise: CatalogServise,
-    private catalogSpeedRoll: Catalog[]
+    private catalogServise: CatalogServise
   ) { }
 
   ngOnInit() {
