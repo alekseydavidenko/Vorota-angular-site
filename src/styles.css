@@ -38,7 +38,7 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .catalog {
   display: flex;
@@ -52,10 +52,11 @@ h1 {
   position: relative;
   cursor: pointer;
 }
-.catalog__item:hover {
-  text-shadow: 0px 0px 15px rgb(255, 230, 0);
+.catalog__item:hover .catalog__item-title {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgb(0, 0, 0);
   -webkit-transition: all .6s;
-       -o-transition: all .6s;
+        -o-transition: all .6s;
           transition: all .6s;
 }
 .catalog__item img {
@@ -77,14 +78,6 @@ h1 {
   font-size: 18px;
   color: #fff;
   text-transform: uppercase;
-}
-.catalog__item-title:hover {
-  text-shadow: none;
-  background-color: rgba(255, 255, 255, 0.7);
-  color: rgb(0, 0, 0);
-  -webkit-transition: all .6s;
-       -o-transition: all .6s;
-          transition: all .6s;
 }
 @media screen and (max-width: 1200px){
   .catalog__item:nth-child(3n+3) {

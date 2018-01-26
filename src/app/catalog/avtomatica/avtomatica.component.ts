@@ -11,15 +11,14 @@ import { Catalog } from '../../shared/catalog';
 })
 export class AvtomaticaComponent implements OnInit {
 
-  catalogAvtomatic: Catalog[];
-
   constructor(
     @Inject(forwardRef(() => Router))
     private router: Router,
     @Inject(forwardRef(() => ActivatedRoute))
     private activatedRouter: ActivatedRoute,
     @Inject(forwardRef(() => CatalogServise))
-    private catalogServise: CatalogServise
+    private catalogServise: CatalogServise,
+    private catalogAvtomatic: Catalog[]
   ) { }
 
   ngOnInit() {

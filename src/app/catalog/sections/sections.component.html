@@ -2,6 +2,6 @@
 <section class="catalog">
   <div class="catalog__item" *ngFor="let item of catalogSections" (click)="onSelect(item)">
     <h3 class="catalog__item-title">{{ item.title }}</h3>
-    <img src="{{ item.src }}" alt="{{ item.title }}">
+    <img src="{{ item.src }}" alt="{{ item.title }}" title="{{ item.title }}">
   </div>
 </section>

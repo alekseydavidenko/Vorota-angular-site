@@ -5,7 +5,6 @@
 }
 .heder__bg,
 .footer__bg {
-  /* background-color: #003a79; */
   background-color: #333;
 }
 .header {
@@ -16,7 +15,7 @@
   height: 50px;
 }
 .content {
-  margin: 20px auto 0;
+  margin: 30px auto 0;
   padding-bottom: 80px;
 }
 .footer {
