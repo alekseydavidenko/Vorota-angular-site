@@ -26,6 +26,6 @@ export class SpeedRollComponent implements OnInit {
     this.catalogServise.getCatalogSpeedRoll().then(result => this.catalogSpeedRoll = result);
   }
   onSelect(selected: Catalog) {
-    // this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
+    this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
   }
 }

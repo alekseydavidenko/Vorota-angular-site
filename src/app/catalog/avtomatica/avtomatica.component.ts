@@ -26,6 +26,6 @@ export class AvtomaticaComponent implements OnInit {
     this.catalogServise.getCatalogAvtomatic().then(result => this.catalogAvtomatic = result);
   }
   onSelect(selected: Catalog) {
-    // this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
+    this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
   }
 }

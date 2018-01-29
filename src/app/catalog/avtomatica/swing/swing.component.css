@@ -1,0 +1,6 @@
+.catalog__item {
+  flex: 1 360px;
+}
+.catalog__item:last-child {
+  margin-right: 0;
+}

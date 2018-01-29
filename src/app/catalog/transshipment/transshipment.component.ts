@@ -26,6 +26,6 @@ export class TransshipmentComponent implements OnInit {
     this.catalogServise.getCatalogTransshipment().then(result => this.catalogTransshipment = result);
   }
   onSelect(selected: Catalog) {
-    // this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
+    this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
   }
 }

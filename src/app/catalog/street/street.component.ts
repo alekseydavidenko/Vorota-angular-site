@@ -26,6 +26,6 @@ export class StreetComponent implements OnInit {
     this.catalogServise.getCatalogStreet().then(result => this.catalogStreet = result);
   }
   onSelect(selected: Catalog) {
-    // this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
+    this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
   }
 }

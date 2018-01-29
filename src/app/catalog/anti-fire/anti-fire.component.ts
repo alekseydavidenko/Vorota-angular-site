@@ -26,6 +26,6 @@ export class AntiFireComponent implements OnInit {
     this.catalogServise.getCatalogAntiFire().then(result => this.catalogAntiFire = result);
   }
   onSelect(selected: Catalog) {
-    // this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
+    this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
   }
 }

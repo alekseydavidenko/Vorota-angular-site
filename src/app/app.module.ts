@@ -17,6 +17,9 @@ import { RolletModule } from './catalog/rollet/rollet.module';
 import { SpeedRollModule } from './catalog/speed-roll/speed-roll.module';
 import { StreetModule } from './catalog/street/street.module';
 import { TransshipmentModule } from './catalog/transshipment/transshipment.module';
+import { SectionsModule as AvtomaticSectionModule } from './catalog/avtomatica/sections/sections.module';
+import { SlidingModule  } from './catalog/avtomatica/sliding/sliding.module';
+import { SwingModule } from './catalog/avtomatica/swing/swing.module';
 
 
 
@@ -37,7 +40,10 @@ import { TransshipmentModule } from './catalog/transshipment/transshipment.modul
     RolletModule,
     SpeedRollModule,
     StreetModule,
-    TransshipmentModule
+    TransshipmentModule,
+    AvtomaticSectionModule,
+    SlidingModule,
+    SwingModule
   ],
   providers: [CatalogServise],
   bootstrap: [AppComponent]

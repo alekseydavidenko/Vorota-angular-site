@@ -26,6 +26,6 @@ export class BarrierComponent implements OnInit {
     this.catalogServise.getCatalogBarrier().then(result => this.catalogBarrier = result);
   }
   onSelect(selected: Catalog) {
-    // this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
+    this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
   }
 }

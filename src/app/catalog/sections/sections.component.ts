@@ -26,6 +26,6 @@ export class SectionsComponent implements OnInit {
     this.catalogServise.getCatalogSections().then(result => this.catalogSections = result);
   }
   onSelect(selected: Catalog) {
-    // this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
+    this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
   }
 }

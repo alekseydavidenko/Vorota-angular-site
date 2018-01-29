@@ -26,6 +26,6 @@ export class RampAndTableComponent implements OnInit {
     this.catalogServise.getCatalogRampEndTable().then(result => this.catalogRampEndTable = result);
   }
   onSelect(selected: Catalog) {
-    // this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
+    this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
   }
 }
