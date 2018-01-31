@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CharacteristicSize, Size } from './characteristics';
 
 @Component({
   selector: 'app-standart',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StandartComponent implements OnInit {
 
+  public size: Size[];
+
   constructor() { }
 
   ngOnInit() {
+    this.size = CharacteristicSize;
   }
 
 }

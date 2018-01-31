@@ -1,10 +1,5 @@
 @charset "utf-8";
-body, h1, h2, h3, h4, h5, h6 {
-font: 14px/18px Verdana, sans-serif;
-}
-code, kbd, pre, samp, tt, var {
-font: 14px/18px Consolas, "Courier New", monospace;
-}
+
 body, optgroup {
 color: #000;
 background: #fff;
@@ -86,8 +81,9 @@ address, blockquote, h1, h2, h3, h4, h5, h6, fieldset, p, ol, ul {
 margin: 0;
 padding: 0;
 }
-th, h1, h2, h3, h4, h5, h6 {
-font-weight: normal;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  text-transform: uppercase;
 }
 q {
 quotes: "\00ab" "\00bb" "\201e" "\201c";

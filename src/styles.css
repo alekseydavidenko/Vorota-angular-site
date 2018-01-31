@@ -14,10 +14,10 @@ body {
   font-size: 1rem;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
-  color: #646464;
+  color: #3b3b3b;
 }
 a, a:link, a:visited {
-  color: #646464;
+  color: #3b3b3b;
   text-decoration: none;
 }
 a:hover {
@@ -101,3 +101,136 @@ h1 {
   }
 }
 /* Styles for catalog end */
+
+/* Style for catalog sections gate start */
+.title__after::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: rgb(108, 196, 108);
+  bottom: -20px;
+  left: 0;
+}
+.product__title,
+.characteristics__title,
+.constuction__title,
+.design__title,
+.acsessuars__title {
+  position: relative;
+  margin-bottom: 50px;
+}
+.product__title {
+  font-size: 28px;
+}
+.characteristics__title,
+.constuction__title,
+.design__title,
+.acsessuars__title {
+  font-size: 24px;
+}
+.design__caption,
+.acsessuars_caption {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.product__description,
+.design__view-panel,
+.design__type-panel {
+  margin-bottom: 25px;
+}
+.product__img,
+.constuction__img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 70px;
+}
+.table,
+.constuction__description,
+.design,
+.acsessuars {
+  margin-bottom: 70px;
+}
+.design__view-panel,
+.design__type-panel,
+.design__color-wood-panel,
+.design__color-ral-panel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.design__view-panel__item,
+.design__color-wood-panel__item {
+  width: 275px;
+  margin-bottom: 15px;
+}
+.design__view-panel__item-img,
+.design__type-panel__item-img,
+.design__color-wood-panel__item-img,
+.design__color-ral-panel__item-img {
+  margin-bottom: 15px;
+}
+.design__type-panel__item {
+  width: 260px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+.design__color-ral-panel__item {
+  margin-bottom: 15px;
+}
+.design__color-ral-panel__item-img {
+  width: 260px;
+  height: 150px;
+  margin-right: 15px;
+}
+.white {
+  background-color: #fff;
+  border: 1px solid rgb(146, 143, 143);
+  box-sizing: border-box;
+}
+.brown {
+  background-color: #493729;
+}
+.blue {
+  background-color: #1a4687;
+}
+.green {
+  background-color: #114539;
+}
+.silver {
+  background-color: #c7c8ca;
+}
+.red {
+  background-color: #a12724;
+}
+.gray {
+  background-color: #9e9fa3;
+}
+.anthracite {
+  background-color: #38414a;
+}
+.black {
+  background-color: #000;
+}
+.acsessuars__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.acsessuars__item-img {
+  width: 260px;
+}
+.acsessuars__item-description {
+  width: 75%;
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 1200px){
+  .acsessuars__item-description {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 15px;
+  }
+}
+/* Style for catalog sections gate end */
