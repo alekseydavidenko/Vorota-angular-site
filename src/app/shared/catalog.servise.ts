@@ -100,8 +100,8 @@ const catalogTransshipment = [
 const catalogRampEndTable = [
   new Catalog(1, 'С опорой на кузов автомобиля', 'assets/img/catalog/ramp-and-table/with-support.jpg', 'with-support'),
   new Catalog(2, 'Без опоры на кузов автомобиля', 'assets/img/catalog/ramp-and-table/without-support.jpg', 'without-support'),
-  new Catalog(3, 'С трех сторонней загрузкой', 'assets/img/catalog/ramp-and-table/with-three-way-download.jpg', 'with-three-way-download'),
-  new Catalog(4, 'Укороченая', 'assets/img/catalog/ramp-and-table/shortened.jpg', 'shortened'),
+  new Catalog(3, 'С трехсторонней загрузкой', 'assets/img/catalog/ramp-and-table/with-three-way-download.jpg', 'with-three-way-download'),
+  new Catalog(4, 'Укороченная', 'assets/img/catalog/ramp-and-table/shortened.jpg', 'shortened'),
   new Catalog(5, 'С одной парой ножниц', 'assets/img/catalog/ramp-and-table/one-pair-scissors.jpg', 'one-pair-scissors'),
   new Catalog(6, 'С двумя парами ножниц', 'assets/img/catalog/ramp-and-table/two-pair-scissors.jpg', 'two-pair-scissors'),
   new Catalog(7, 'С тремя парами ножниц', 'assets/img/catalog/ramp-and-table/three-pair-scissors.jpg', 'three-pair-scissors'),
