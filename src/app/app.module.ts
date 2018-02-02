@@ -7,7 +7,9 @@ import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { CatalogModule } from './catalog/catalog.module';
 
-import { CatalogServise } from './shared/catalog.servise';
+import { CatalogService } from './shared/catalog.service';
+import { SectionsService } from './shared/sections/sections.service';
+
 import { SectionsModule } from './catalog/sections/sections.module';
 import { AntiFireModule } from './catalog/anti-fire/anti-fire.module';
 import { AvtomaticaModule } from './catalog/avtomatica/avtomatica.module';
@@ -45,7 +47,7 @@ import { SwingModule } from './catalog/avtomatica/swing/swing.module';
     SlidingModule,
     SwingModule
   ],
-  providers: [CatalogServise],
+  providers: [CatalogService, SectionsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

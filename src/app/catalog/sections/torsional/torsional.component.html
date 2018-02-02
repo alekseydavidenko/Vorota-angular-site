@@ -1,3 +1,114 @@
-<p>
-  torsional works!
-</p>
+<!-- Product main start -->
+<div class="product">
+  <h2 class="product__title title__after">С торсионным механизмом</h2>
+  <p class="product__description">
+    Гаражные ворота серии RSD02 рассчитаны на установку в проемы как небольших, так и средних размеров.
+    Они могут быть установлены в помещения с притолокой от 150 мм и боковыми расстояниями (от края проема до стены) от 120 мм.
+    Специально разработанная конструкция и многообразие типов подъема позволяют установить данную серию ворот в помещения с различными архитектурными особенностями.
+    Размеры проема: ширина — от 2 000 до 6 000 мм; высота — от 1 800 до 3 100 мм. Гаражные ворота могут быть оснащены врезанной в полотно калиткой.</p>
+  <p><b>Изготовление:</b> по индивидуальным размерам заказчика.</p>
+  <p><b>Преимущества:</b> многообразие типов подъема ворот стандарт дает возможность монтировать ворота в помещениях с любой геометрией внутреннего пространства,
+    также в воротах сданной серии есть возможна установки врезной калитки.</p>
+  <p><b>Механизм балансировки полотна:</b> торсионный механиз с ресурсом 25000 циклов</p>
+  <p><b>Дизайн:</b>панели любого вида, типа поверхности и цвета</p>
+  <p class="product__description"><b>Декоративная алюминиевая облицовка полотна:</b> Classic с облицовкой под дерево;
+    Country с декоративными коваными элементами; Hi-Tech с декоративными алюминиевыми молдингами.</p>
+  <img class="product__img"
+    src="../../../../assets/img/catalog/section/poster/poster-torsional.jpg"
+    alt="С торсионным механизмом">
+</div>
+<!-- Product main end -->
+<!-- Design start -->
+<div class="design">
+  <h3 class="design__title title__after">Дизайн</h3>
+  <!-- View Panel start -->
+  <h4 class="design__caption">Виды Панелей</h4>
+  <div class="design__view-panel">
+    <div class="design__view-panel__item" *ngFor="let viewPanel of viewsPanels">
+      <img class="design__view-panel__item-img" src="{{ viewPanel.img }}" alt="{{ viewPanel.title }}">
+      <div>{{ viewPanel.title }}</div>
+    </div>
+  </div>
+  <!-- View Panel end -->
+  <!-- Type Panel start -->
+  <h4 class="design__caption">Типы поверхностей</h4>
+  <div class="design__type-panel">
+    <div class="design__type-panel__item" *ngFor="let typePanel of typesPanels">
+      <img class="design__type-panel__item-img"
+        src="{{ typePanel.img }}"
+        alt="{{ typePanel.title }}">
+      <div>{{ typePanel.title }}</div>
+    </div>
+  </div>
+  <!-- Type Panel end -->
+  <!-- Color Panel Wood start -->
+  <h4 class="design__caption">Цвет панелей под дерево</h4>
+  <div class="design__color-wood-panel">
+    <div class="design__color-wood-panel__item" *ngFor="let colorPanelWood of colorsPanelsWood">
+      <img class="design__color-wood-panel__item-img" src="{{ colorPanelWood.img }}" alt="{{ colorPanelWood.title }}">
+      <div>{{ colorPanelWood.title }}</div>
+    </div>
+  </div>
+  <!-- Color Panel Wood end -->
+  <!-- Color Panel Ral start -->
+  <h4 class="design__caption">Цвет панелей по RAL карте</h4>
+  <div class="design__color-ral-panel">
+    <div class="design__color-ral-panel__item" *ngFor="let colorPanelRal of colorsPanelsRal">
+      <div class="design__color-ral-panel__item-img {{ colorPanelRal.classColor }}"></div>
+      <div>{{ colorPanelRal.title }}</div>
+    </div>
+  </div>
+  <!-- Color Panel Ral end -->
+  <!-- Facing Premium start-->
+  <h4 class="design__caption">Облицовка полотна premium</h4>
+  <div class="design__facing-premium">
+    <div class="design__facing-premium__item" *ngFor="let facingPanel of facingPanels">
+      <img class="design__facing-premium__item-img"
+        src="{{ facingPanel.img }}"
+        alt="{{ facingPanel.title }}">
+      <div>{{ facingPanel.title }}</div>
+    </div>
+  </div>
+  <!-- Facing Premium end-->
+</div>
+<!-- Design end -->
+<!-- Acsessuar vorot start -->
+<div class="acsessuars">
+  <h3 class="acsessuars__title title__after">Аксессуары</h3>
+  <div class="acsessuars__item" *ngFor="let acsessuar of acsessuars">
+    <img class="acsessuars__item-img"
+      src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
+    <p class="acsessuars__item-description"><b>{{ acsessuar.title }}</b><br>{{ acsessuar.description }}</p>
+  </div>
+</div>
+<!-- Acsessuar vorot end -->
+<!-- Characteristics start -->
+<div class="characteristics">
+  <h3 class="characteristics__title title__after">Таблица размеров</h3>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Параметр</th>
+        <th>Показатель</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of size">
+        <td>{{ item.parametr }}</td>
+        <td>{{ item.index }}</td>
+      </tr>
+    </tbody>
+    </table>
+</div>
+<!-- Characteristics end -->
+<!-- Constructuin start -->
+<div class="constuction">
+  <h3 class="constuction__title title__after">Конструкция</h3>
+  <img class="constuction__img"
+    src="../../../../assets/img/catalog/section/poster/construction-torsional.jpg"
+    alt="Конструкция" title="Конструкция">
+  <div class="constuction__description" >
+    <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
+  </div>
+</div>
+<!-- Constructuin end -->

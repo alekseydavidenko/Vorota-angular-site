@@ -136,7 +136,8 @@ h1 {
 }
 .product__description,
 .design__view-panel,
-.design__type-panel {
+.design__type-panel,
+.design__facing-premium {
   margin-bottom: 25px;
 }
 .product__img,
@@ -154,7 +155,8 @@ h1 {
 .design__view-panel,
 .design__type-panel,
 .design__color-wood-panel,
-.design__color-ral-panel {
+.design__color-ral-panel,
+.design__facing-premium {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -167,10 +169,12 @@ h1 {
 .design__view-panel__item-img,
 .design__type-panel__item-img,
 .design__color-wood-panel__item-img,
-.design__color-ral-panel__item-img {
+.design__color-ral-panel__item-img,
+.design__facing-premium__item-img {
   margin-bottom: 15px;
 }
-.design__type-panel__item {
+.design__type-panel__item,
+.design__facing-premium__item {
   width: 260px;
   margin-bottom: 15px;
   margin-right: 15px;

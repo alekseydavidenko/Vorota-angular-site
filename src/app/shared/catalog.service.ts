@@ -123,7 +123,7 @@ const catalogTransshipmentPromise = Promise.resolve(catalogTransshipment);
 const catalogRampEndTablePromise = Promise.resolve(catalogRampEndTable);
 
 @Injectable()
-export class CatalogServise {
+export class CatalogService {
   getCatalog(): Promise<Catalog[]> {
     return catalogPromise;
   }

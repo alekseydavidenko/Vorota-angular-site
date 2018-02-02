@@ -1,43 +1,5 @@
-import {
-  ViewPanel,
-  TypePanel,
-  ColorPanelWood,
-  ColorPanelRal,
-  AcsessuarVorot,
-  Construction,
-  Size
-} from '../../../shared/idex';
+import { Construction, Size } from '../../../shared/idex';
 
-export const ViewsPapels: ViewPanel[] = [
-  new ViewPanel('../../../../assets/img/catalog/section/complectation/view-gofr.jpg', 'Доска'),
-];
-
-export const TypesPanels: TypePanel[] = [
-  new TypePanel('../../../../assets/img/catalog/section/complectation/type-wood.jpg', 'Под дерево'),
-];
-
-export const ColorsPanelsWood: ColorPanelWood[] = [
-  new ColorPanelWood('../../../../assets/img/catalog/section/complectation/color-dark-oak.jpg', 'Темный дуб'),
-  new ColorPanelWood('../../../../assets/img/catalog/section/complectation/color-golden-oak.jpg', 'Золтой дуб'),
-];
-
-export const ColosPanelsRal: ColorPanelRal[] = [
-  new ColorPanelRal('white', 'RAL 9003 Белый'),
-  new ColorPanelRal('brown', 'RAL 8014 Коричневый'),
-];
-
-export const Acsessuars: AcsessuarVorot[] = [
-  new AcsessuarVorot(
-    '../../../../assets/img/catalog/section/complectation/acsessuar-valve.jpg',
-    'Механическая задвижка',
-    'Позволяет запирать ворота изнутри помещения. Отличается простотой и надежностью.'
-  ),
-  new AcsessuarVorot(
-    '../../../../assets/img/catalog/section/complectation/acsessuar-lock.jpg',
-    'Механический замок',
-    'Позволяет блокировать полотно ворот в закрытом положении как изнутри помещения, так и со стороны улицы.'
-  )
-];
 export const CharacteristicSize: Size[] = [
   new Size('Комплект №1 ширина/высота проема, мм', '2500х2150'),
   new Size('Комплект №2 ширина/высота проема, мм', '2500х2280'),

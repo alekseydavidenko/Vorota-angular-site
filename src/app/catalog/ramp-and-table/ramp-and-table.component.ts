@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject, forwardRef } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
-import { CatalogServise } from '../../shared/catalog.servise';
+import { CatalogService } from '../../shared/catalog.service';
 import { Catalog } from '../../shared/catalog';
 
 @Component({
@@ -18,12 +18,12 @@ export class RampAndTableComponent implements OnInit {
     private router: Router,
     @Inject(forwardRef(() => ActivatedRoute))
     private activatedRouter: ActivatedRoute,
-    @Inject(forwardRef(() => CatalogServise))
-    private catalogServise: CatalogServise
+    @Inject(forwardRef(() => CatalogService))
+    private catalogService: CatalogService
   ) { }
 
   ngOnInit() {
-    this.catalogServise.getCatalogRampEndTable().then(result => this.catalogRampEndTable = result);
+    this.catalogService.getCatalogRampEndTable().then(result => this.catalogRampEndTable = result);
   }
   onSelect(selected: Catalog) {
     this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });

@@ -1,4 +1,4 @@
-export class AcsessuarVorot {
+export class AcsessuarSections {
   constructor(
     public img: string,
     public title: string,

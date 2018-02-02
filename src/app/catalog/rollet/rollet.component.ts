@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject, forwardRef } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
-import { CatalogServise } from '../../shared/catalog.servise';
+import { CatalogService } from '../../shared/catalog.service';
 import { Catalog } from '../../shared/catalog';
 
 
@@ -19,12 +19,12 @@ export class RolletComponent implements OnInit {
     private router: Router,
     @Inject(forwardRef(() => ActivatedRoute))
     private activatedRouter: ActivatedRoute,
-    @Inject(forwardRef(() => CatalogServise))
-    private catalogServise: CatalogServise
+    @Inject(forwardRef(() => CatalogService))
+    private catalogService: CatalogService
   ) { }
 
   ngOnInit() {
-    this.catalogServise.getCatalogRollet().then(result => this.catalogRollet = result);
+    this.catalogService.getCatalogRollet().then(result => this.catalogRollet = result);
   }
   onSelect(selected: Catalog) {
     this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
