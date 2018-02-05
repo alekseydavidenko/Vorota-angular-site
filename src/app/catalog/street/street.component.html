@@ -1,7 +1,9 @@
 <h2 class="title">Уличные ворота</h2>
-<section class="catalog">
-  <div class="catalog__item" *ngFor="let item of catalogStreet" (click)="onSelect(item)">
-    <h3 class="catalog__item-title">{{ item.title }}</h3>
-    <img src="{{ item.src }}" alt="{{ item.title }}" title="{{ item.title }}">
+<section class="catalog row justify-content-md-center">
+  <div class="catalog__items col-xl-4 col-md-6 col-sm-12" *ngFor="let item of catalogStreet" (click)="onSelect(item)">
+    <div class="catalog__item">
+      <h3 class="catalog__item-title">{{ item.title }}</h3>
+      <img class="catalog__item-img" src="{{ item.src }}" alt="{{ item.title }}" title="{{ item.title }}">
+    </div>
   </div>
 </section>

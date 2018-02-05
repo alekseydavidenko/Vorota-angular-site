@@ -38,10 +38,10 @@ export class SectionsService {
 
   // Clor Panel Ral
   colorPanelRal = {
-    white: new ColorPanelRal('white', 'RAL 9003 Белый'),
+    white: new ColorPanelRal('white', 'RAL 9010 Белый'),
     brown: new ColorPanelRal('brown', 'RAL 8014 Коричневый'),
     blue: new ColorPanelRal('blue', 'RAL 5005 Синий'),
-    green: new ColorPanelRal('green', 'RAL 6005 Зеленый'),
+    green: new ColorPanelRal('green', 'RAL 6006 Зеленый'),
     silver: new ColorPanelRal('silver', 'RAL 9006 Серебро'),
     red: new ColorPanelRal('red', 'RAL 3000 Красный'),
     gray: new ColorPanelRal('gray', 'RAL 9007 Серый'),
