@@ -52,8 +52,8 @@
   <h4 class="design__caption">Цвет панелей по RAL карте</h4>
   <div class="design__color-ral-panel row justify-content-center">
     <div class="design__color-ral-panel__item" *ngFor="let colorPanelRal of colorsPanelsRal">
-      <div class="design__color-ral-panel__item-img {{ colorPanelRal.classColor }}"></div>
-      <div>{{ colorPanelRal.title }}</div>
+      <img class="design__color-ral-panel__item-img" src="{{ colorPanelRal.img }}" alt="{{ colorPanelRal.title }}">
+      <div class="design__color-ral-panel__item-description">{{ colorPanelRal.title }}</div>
     </div>
   </div>
   <!-- Color Panel Ral end -->

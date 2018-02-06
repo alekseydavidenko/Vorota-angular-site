@@ -52,6 +52,7 @@ export class PanoramaComponent implements OnInit {
       'gray',
       'anthracite',
       'black',
+      'ral'
     ]);
     this.acsessuars = this.sectionsService.getAcsessuarsSections([
       'valve',

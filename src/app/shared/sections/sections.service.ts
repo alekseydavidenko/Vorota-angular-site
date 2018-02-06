@@ -38,15 +38,36 @@ export class SectionsService {
 
   // Clor Panel Ral
   colorPanelRal = {
-    white: new ColorPanelRal('white', 'RAL 9010 Белый'),
-    brown: new ColorPanelRal('brown', 'RAL 8014 Коричневый'),
-    blue: new ColorPanelRal('blue', 'RAL 5005 Синий'),
-    green: new ColorPanelRal('green', 'RAL 6006 Зеленый'),
-    silver: new ColorPanelRal('silver', 'RAL 9006 Серебро'),
-    red: new ColorPanelRal('red', 'RAL 3000 Красный'),
-    gray: new ColorPanelRal('gray', 'RAL 9007 Серый'),
-    anthracite: new ColorPanelRal('anthracite', 'RAL 7016 Антрацыт'),
-    black: new ColorPanelRal('black', 'RAL 9005 Черный'),
+    white: new ColorPanelRal(
+      '../../../assets/img/catalog/section/complectation/color-white.jpg',
+      'RAL 9010 Белый'),
+    brown: new ColorPanelRal(
+      '../../../assets/img/catalog/section/complectation/color-brown.jpg',
+      'RAL 8014 Коричневый'),
+    blue: new ColorPanelRal(
+      '../../../assets/img/catalog/section/complectation/color-blue.jpg',
+      'RAL 5005 Синий'),
+    green: new ColorPanelRal(
+      '../../../assets/img/catalog/section/complectation/color-green.jpg',
+      'RAL 6005 Зеленый'),
+    silver: new ColorPanelRal(
+      '../../../assets/img/catalog/section/complectation/color-silver.jpg',
+      'RAL 9006 Серебро'),
+    red: new ColorPanelRal(
+      '../../../assets/img/catalog/section/complectation/color-red.jpg',
+      'RAL 3000 Красный'),
+    gray: new ColorPanelRal(
+      '../../../assets/img/catalog/section/complectation/color-gray.jpg',
+      'RAL 9007 Серый'),
+    anthracite: new ColorPanelRal(
+      '../../../assets/img/catalog/section/complectation/color-anthracite.jpg',
+      'RAL 7016 Антрацыт'),
+    black: new ColorPanelRal(
+      '../../../assets/img/catalog/section/complectation/color-black.jpg',
+      'RAL 9005 Черный'),
+    ral: new ColorPanelRal(
+      '../../../assets/img/catalog/section/complectation/color-all-ral.jpg',
+      'Нестандартный цвет по карте RAL (наценка)')
   };
 
   // Facinf Premium

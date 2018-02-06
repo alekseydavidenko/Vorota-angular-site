@@ -168,35 +168,10 @@ h1 {
   height: 150px;
   margin-right: 15px;
 }
-.white {
-  background-color: #fff;
-  border: 1px solid rgb(146, 143, 143);
-  box-sizing: border-box;
+.design__color-ral-panel__item-description {
+  width: 260px;
 }
-.brown {
-  background-color: #493729;
-}
-.blue {
-  background-color: #1a4687;
-}
-.green {
-  background-color: #114539;
-}
-.silver {
-  background-color: #c7c8ca;
-}
-.red {
-  background-color: #a12724;
-}
-.gray {
-  background-color: #9e9fa3;
-}
-.anthracite {
-  background-color: #38414a;
-}
-.black {
-  background-color: #000;
-}
+
 .acsessuars__item {
   margin-bottom: 30px;
 }
@@ -211,3 +186,19 @@ h1 {
   }
 }
 /* Style for catalog sections gate end */
+
+/* Style for catalog street gate start */
+.design__variant {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+.design__variant__item {
+  width: 260px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+.design__variant__item-img {
+  margin-bottom: 15px;
+}
+/* Style for catalog street gate end */

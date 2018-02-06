@@ -65,6 +65,7 @@ export class TorsionalComponent implements OnInit {
       'gray',
       'anthracite',
       'black',
+      'ral'
     ]);
     this.facingPanels = this.sectionsService.getFacingPremium([
       'classic01',

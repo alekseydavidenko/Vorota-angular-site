@@ -9,6 +9,7 @@ import { CatalogModule } from './catalog/catalog.module';
 
 import { CatalogService } from './shared/catalog.service';
 import { SectionsService } from './shared/sections/sections.service';
+import { StreetService } from './shared/street/street.service';
 
 import { SectionsModule } from './catalog/sections/sections.module';
 import { AntiFireModule } from './catalog/anti-fire/anti-fire.module';
@@ -47,7 +48,11 @@ import { SwingModule } from './catalog/avtomatica/swing/swing.module';
     SlidingModule,
     SwingModule
   ],
-  providers: [CatalogService, SectionsService],
+  providers: [
+    CatalogService,
+    SectionsService,
+    StreetService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
