@@ -1,3 +1,91 @@
-<p>
-  section works!
-</p>
+<!-- Product main start -->
+<div class="product">
+  <h2 class="product__title title__after">Секционные противопожартные ворота с классм огнестойкости EI60</h2>
+  <p class="product__description">
+    Противопожарные секционные ворота применяются в качестве защиты и удержания от распространения огня и дыма
+    в смежные с источником возгорания помещения. Противопожарные ворота изготавливаются из специальных огнеустойчивых
+    панелей с минераловатной прослойкой и имеют конструкцию классических секционных ворот.
+    По периметру противопожарных секционных ворот устанавливаются резиновый уплотнитель и терморасширяющаяся лента,
+    которая при нагревании увеличивается и герметизирует ворота. Благодаря тому, что ворота открываются вверх и откатываются под потолок,
+    они не занимают много места внутри помещения, оставляя свободное пространство у проема.
+    Большой выбор типов подъема ворот позволяет устанавливать их в помещения с различными размерами притолоки.
+    Ворота спроектированы и изготовлены из высококачественных материалов с применением современных технологий.
+    Они безопасны в использовании — в их конструкции предусмотрены защитные устройства от разрыва троса и обрыва пружины,
+    обеспечивающие надежную работу и предотвращающие падение полотна ворот.
+    Противопожарные секционные ворота DoorHan имеют более легкий вес по сравнению с аналогами, предлагаемыми на рынке.
+    Они обладают высокой прочностью, термо и звукоизоляцией, а также защитой от взлома.
+    Для автоматизации противопожарных секционных ворот применяются электроприводы DoorHan.
+    Противопожарные ворота DoorHan полностью отвечают требованиям европейских строительных стандартов и имеют сертификаты соответствия.</p>
+  <p><b>Принцип работы:</b> при открытии полотно движется вверх по направляющим и располагается под потолком, не занимая много места.</p>
+  <p><b>Преимущества:</b> подходят для установки как во внешние, так и внутренние проемы зданий различного назначения;
+    полотно ворот имеет более легкий вес по сравнению с аналогами.</p>
+  <p><b>Особенности конструкции:</b> в конструкции предусмотрены защитные устройства от разрыва троса и обрыва пружины;
+    большой выбор типов подъема.</p>
+  <p class="product__description"><b>Дизайн:</b> на выбор предлагается два стандартных цвета (белый и коричневый);
+    опционально ворота могут быть окрашены в любой цвет по карте RAL.</p>
+  <img class="product__img" src="../../../../assets/img/catalog/anti-fire/poster/poster-section.jpg" alt="Секционные противопожартные">
+</div>
+<!-- Product main end -->
+<!-- Design start -->
+<div class="design">
+  <h3 class="design__title title__after">Дизайн</h3>
+  <!-- Type Panel start -->
+  <h4 class="design__caption">Типы поверхностей</h4>
+  <div class="design__type-panel row justify-content-center">
+    <div class="design__type-panel__item" *ngFor="let typePanel of typesPanels">
+      <img class="design__type-panel__item-img" src="{{ typePanel.img }}" alt="{{ typePanel.title }}">
+      <div>{{ typePanel.title }}</div>
+    </div>
+  </div>
+  <!-- Type Panel end -->
+  <!-- Color Panel Ral start -->
+  <h4 class="design__caption">Цвет панелей по RAL карте</h4>
+  <div class="design__color-ral-panel row justify-content-center">
+    <div class="design__color-ral-panel__item" *ngFor="let colorPanelRal of colorsPanelsRal">
+      <img class="design__color-ral-panel__item-img" src="{{ colorPanelRal.img }}" alt="{{ colorPanelRal.title }}">
+      <div class="design__color-ral-panel__item-description">{{ colorPanelRal.title }}</div>
+    </div>
+  </div>
+  <!-- Color Panel Ral end -->
+</div>
+<!-- Design end -->
+<!-- Acsessuar vorot start -->
+<div class="acsessuars">
+  <h3 class="acsessuars__title title__after">Аксессуары</h3>
+  <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
+    <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
+    <p class="acsessuars__item-description col-xl-9 col-md-8">
+      <b>{{ acsessuar.title }}</b>
+      <br>{{ acsessuar.description }}</p>
+  </div>
+</div>
+<!-- Acsessuar vorot end -->
+<!-- Characteristics start -->
+<div class="characteristics">
+  <h3 class="characteristics__title title__after">Таблица размеров</h3>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Параметр</th>
+        <th>Показатель</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of size">
+        <td>{{ item.parametr }}</td>
+        <td>{{ item.index }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- Characteristics end -->
+<!-- Constructuin start -->
+<div class="constuction">
+  <h3 class="constuction__title title__after">Конструкция</h3>
+  <img class="constuction__img" src="../../../../assets/img/catalog/anti-fire/poster/construction-section.jpg" alt="Конструкция"
+    title="Конструкция">
+  <div class="constuction__description">
+    <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
+  </div>
+</div>
+<!-- Constructuin end -->

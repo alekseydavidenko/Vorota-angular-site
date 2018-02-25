@@ -10,6 +10,7 @@ import { CatalogModule } from './catalog/catalog.module';
 import { CatalogService } from './shared/catalog.service';
 import { SectionsService } from './shared/sections/sections.service';
 import { StreetService } from './shared/street/street.service';
+import { AntiFireService } from './shared/anti-fire/anti-fire.service';
 
 import { SectionsModule } from './catalog/sections/sections.module';
 import { AntiFireModule } from './catalog/anti-fire/anti-fire.module';
@@ -51,7 +52,8 @@ import { SwingModule } from './catalog/avtomatica/swing/swing.module';
   providers: [
     CatalogService,
     SectionsService,
-    StreetService
+    StreetService,
+    AntiFireService
   ],
   bootstrap: [AppComponent]
 })

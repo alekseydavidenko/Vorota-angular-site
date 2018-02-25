@@ -1,3 +1,86 @@
-<p>
-  swinging works!
-</p>
+<!-- Product main start -->
+<div class="product">
+  <h2 class="product__title title__after">Распашные противопожарные ворота с классом огнестойкости EI90, EI120</h2>
+  <p class="product__description">
+    Установка противопожарных распашных ворот является одним из эффективных методов локализации очага возгорания.
+    Противопожарные ворота сдерживают распространение огня и продуктов горения, тем самым увеличивают время,
+    необходимое для принятия жизненно важных решений. Огнестойкость ворот обеспечивается за счет
+    использования в их конструкции панелей с наполнителем из минеральной ваты. На полотно ворот и в проем устанавливаются
+    специальные профили и терморасширяющаяся лента, которая при возрастании температуры увеличивается в объеме и герметизирует проем.
+    Противопожарные распашные ворота могут быть выполнены симметричными (с одинаковой шириной створок) и несимметричными (с разной шириной створок),
+    с открыванием внутрь или наружу помещения. Так как они имеют две створки, для термоизоляции и предотвращения
+    проникновения дыма в местах их стыка применяется специальная система уплотнителей по периметру створок ворот.
+    Для автоматизации противопожарных ворот применяются электроприводы DoorHan для распашных ворот.</p>
+  <p><b>Принцип работы:</b> распашные ворота могут быть изготовлены с одинаковыми или разными по ширине створками,
+    которые при открывании распахиваются внутрь или наружу помещения.</p>
+  <p><b>Преимущества:</b> распашные ворота идеально подходят для случаев, когда установка других противопожарных конструкций невозможна.</p>
+  <p><b>Особенности конструкции:</b> пассивная створка ворот комплектуется ригельной задвижкой; активная — цилиндровым замком с нажимной ручкой;
+    для большего удобства эксплуатации ворот в створку может быть врезана калитка.</p>
+  <p class="product__description"><b>Дизайн:</b> стандартно полотно окрашивается в серый цвет;
+    опционально ворота могут быть окрашены в любой цвет по карте RAL.</p>
+  <img class="product__img" src="../../../../assets/img/catalog/anti-fire/poster/poster-swing.jpg" alt="Распашные противопожарные">
+</div>
+<!-- Product main end -->
+<!-- Design start -->
+<div class="design">
+  <h3 class="design__title title__after">Дизайн</h3>
+  <!-- Type Panel start -->
+  <h4 class="design__caption">Типы поверхностей</h4>
+  <div class="design__type-panel row justify-content-center">
+    <div class="design__type-panel__item" *ngFor="let typePanel of typesPanels">
+      <img class="design__type-panel__item-img" src="{{ typePanel.img }}" alt="{{ typePanel.title }}">
+      <div>{{ typePanel.title }}</div>
+    </div>
+  </div>
+  <!-- Type Panel end -->
+  <!-- Color Panel Ral start -->
+  <h4 class="design__caption">Цвет панелей по RAL карте</h4>
+  <div class="design__color-ral-panel row justify-content-center">
+    <div class="design__color-ral-panel__item" *ngFor="let colorPanelRal of colorsPanelsRal">
+      <img class="design__color-ral-panel__item-img" src="{{ colorPanelRal.img }}" alt="{{ colorPanelRal.title }}">
+      <div class="design__color-ral-panel__item-description">{{ colorPanelRal.title }}</div>
+    </div>
+  </div>
+  <!-- Color Panel Ral end -->
+</div>
+<!-- Design end -->
+<!-- Acsessuar vorot start -->
+<div class="acsessuars">
+  <h3 class="acsessuars__title title__after">Аксессуары</h3>
+  <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
+    <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
+    <p class="acsessuars__item-description col-xl-9 col-md-8">
+      <b>{{ acsessuar.title }}</b>
+      <br>{{ acsessuar.description }}</p>
+  </div>
+</div>
+<!-- Acsessuar vorot end -->
+<!-- Characteristics start -->
+<div class="characteristics">
+  <h3 class="characteristics__title title__after">Таблица размеров</h3>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Параметр</th>
+        <th>Показатель</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of size">
+        <td>{{ item.parametr }}</td>
+        <td>{{ item.index }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- Characteristics end -->
+<!-- Constructuin start -->
+<div class="constuction">
+  <h3 class="constuction__title title__after">Конструкция</h3>
+  <img class="constuction__img" src="../../../../assets/img/catalog/anti-fire/poster/construction-swing.jpg" alt="Конструкция"
+    title="Конструкция">
+  <div class="constuction__description">
+    <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
+  </div>
+</div>
+<!-- Constructuin end -->

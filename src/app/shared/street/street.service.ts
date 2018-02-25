@@ -26,43 +26,56 @@ export class StreetService {
   colorPanelRal = {
     white: new ColorPanelRal(
       '../../../assets/img/catalog/street/complectation/color-white.jpg',
-      'RAL 9003 Белый'),
+      'RAL 9003 Белый'
+    ),
     brown: new ColorPanelRal(
       '../../../assets/img/catalog/street/complectation/color-brown.jpg',
-      'RAL 8014 Коричневый'),
+      'RAL 8014 Коричневый'
+    ),
     brownRed: new ColorPanelRal(
       '../../../assets/img/catalog/street/complectation/color-brown-red.jpg',
-      'RAL 8017 Коричнево красный'),
+      'RAL 8017 Коричнево красный'
+    ),
     blue: new ColorPanelRal(
       '../../../assets/img/catalog/street/complectation/color-blue.jpg',
-      'RAL 5005 Синий'),
+      'RAL 5005 Синий'
+    ),
     green: new ColorPanelRal(
       '../../../assets/img/catalog/street/complectation/color-green.jpg',
-      'RAL 6005 Зеленый'),
+      'RAL 6005 Зеленый'
+    ),
     silver: new ColorPanelRal(
       '../../../assets/img/catalog/street/complectation/color-silver.jpg',
-      'RAL 9006 Серебро'),
+      'RAL 9006 Серебро'
+    ),
     red: new ColorPanelRal(
       '../../../assets/img/catalog/street/complectation/color-red.jpg',
-      'RAL 3000 Красный'),
+      'RAL 3000 Красный'
+    ),
     gray: new ColorPanelRal(
       '../../../assets/img/catalog/street/complectation/color-gray.jpg',
-      'RAL 7004 Серый'),
+      'RAL 7004 Серый'
+    ),
     anthracite: new ColorPanelRal(
       '../../../assets/img/catalog/street/complectation/color-anthracite.jpg',
-      'RAL 7016 Антрацыт'),
+      'RAL 7016 Антрацыт'
+    ),
     ivory: new ColorPanelRal(
       '../../../assets/img/catalog/street/complectation/color-ivory.jpg',
-      'RAL 1014 Бежевый'),
+      'RAL 1014 Бежевый'
+    ),
     wineRred: new ColorPanelRal(
       '../../../assets/img/catalog/street/complectation/color-wine-red.jpg',
-      'RAL 7016 Бордо'),
+      'RAL 7016 Бордо'
+    ),
     wenge: new ColorPanelRal(
       '../../../assets/img/catalog/street/complectation/color-wenge.jpg',
-      'Венге'),
+      'Венге'
+    ),
     goldenOak: new ColorPanelRal(
       '../../../assets/img/catalog/street/complectation/color-golden-oak.jpg',
-      'Золотой дуб'),
+      'Золотой дуб'
+    ),
   };
 
   // Variant
