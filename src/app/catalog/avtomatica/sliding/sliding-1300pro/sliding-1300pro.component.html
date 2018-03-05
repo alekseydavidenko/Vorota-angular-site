@@ -1,3 +1,51 @@
-<p>
-  sliding-1300pro works!
-</p>
+<!-- Product main start -->
+<div class="product">
+  <h2 class="product__title title__after">Привод SLIDING-1300 для откатных ворот</h2>
+  <p class="product__description">
+    Электромеханический привод Sliding-1300 предназнaчен для aвтоматизации сдвижных ворот весом до 1300 кг.
+  </p>
+  <img class="product__img" src="../../../../../assets/img/catalog/avtomatica/sliding/poster-sliding-1300-2100.jpg" alt="Привод SLIDING-1300">
+</div>
+<!-- Product main end -->
+<!-- Acsessuar vorot start -->
+<!-- <div class="acsessuars">
+  <h3 class="acsessuars__title title__after">Аксессуары</h3>
+  <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
+    <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
+    <p class="acsessuars__item-description col-xl-9 col-md-8">
+      <b>{{ acsessuar.title }}</b>
+      <br>{{ acsessuar.description }}</p>
+  </div>
+</div> -->
+<!-- Acsessuar vorot end -->
+<!-- Specification start -->
+<div class="characteristics">
+  <h3 class="characteristics__title title__after">Технические характеристики</h3>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Параметр</th>
+        <th>Значение</th>
+        <th *ngIf="specification">Примечание</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of specifications">
+        <td>{{ item.parametr }}</td>
+        <td>{{ item.index }}</td>
+        <td *ngIf="specification">{{ item.note }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- Specification end -->
+<!-- Constructuin start -->
+<div class="constuction">
+  <h3 class="constuction__title title__after">Конструкция</h3>
+  <img class="constuction__img" src="../../../../../assets/img/catalog/avtomatica/sliding/construction-sliding-1300-2100.jpg" alt="Конструкция"
+    title="Конструкция">
+  <div class="constuction__description">
+    <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
+  </div>
+</div>
+<!-- Constructuin end -->
