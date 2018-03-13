@@ -11,6 +11,7 @@ import { CatalogService } from './shared/catalog.service';
 import { SectionsService } from './shared/sections/sections.service';
 import { StreetService } from './shared/street/street.service';
 import { AntiFireService } from './shared/anti-fire/anti-fire.service';
+import { AutomaticaService } from './shared/automatica/automatica.service';
 
 import { SectionsModule } from './catalog/sections/sections.module';
 import { AntiFireModule } from './catalog/anti-fire/anti-fire.module';
@@ -53,7 +54,8 @@ import { SwingModule } from './catalog/avtomatica/swing/swing.module';
     CatalogService,
     SectionsService,
     StreetService,
-    AntiFireService
+    AntiFireService,
+    AutomaticaService
   ],
   bootstrap: [AppComponent]
 })

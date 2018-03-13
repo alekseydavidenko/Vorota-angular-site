@@ -1,7 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, forwardRef } from '@angular/core';
 
-import { Construction, Specification } from '../../../../shared/idex';
+import { Size, Construction, Specification } from '../../../../shared/idex';
 import { Constructions, CharacteristicTechnical } from './characteristics';
+
+import { Product } from '../../../../shared/automatica/product';
+
+import { AutomaticaService } from '../../../../shared/automatica/automatica.service';
 @Component({
   selector: 'app-sliding-2100pro',
   templateUrl: './sliding-2100pro.component.html',
@@ -11,13 +15,39 @@ export class Sliding2100proComponent implements OnInit {
 
   public constructions: Construction[];
   public specifications: Specification[];
+  public acsessuars: Product[];
+
   public specification = false;
 
-  constructor() { }
+  constructor(
+    @Inject(forwardRef(() => AutomaticaService))
+    public automaticaService: AutomaticaService
+  ) { }
 
   ngOnInit() {
     this.constructions = Constructions;
     this.specifications = CharacteristicTechnical;
+
+    this.acsessuars = this.automaticaService.getProducts([
+      'transmitter2Pro',
+      'transmitter4Pro',
+      'photosell',
+      'smartcontrol2',
+      'gsm2',
+      'transmitter4',
+      'carTransmitter',
+      'transmitterPremium',
+      'command',
+      'keypad',
+      'keyswitch',
+      'keycode',
+      'dhre1',
+      'dhSensorKit',
+      'photosellPro',
+      'sirena',
+      'lampPro',
+      'heater',
+    ]);
 
     this.specificationShow();
   }
