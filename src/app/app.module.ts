@@ -12,6 +12,7 @@ import { SectionsService } from './shared/sections/sections.service';
 import { StreetService } from './shared/street/street.service';
 import { AntiFireService } from './shared/anti-fire/anti-fire.service';
 import { AutomaticaService } from './shared/automatica/automatica.service';
+import { RolletService } from './shared/rollet/rollet.service';
 
 import { SectionsModule } from './catalog/sections/sections.module';
 import { AntiFireModule } from './catalog/anti-fire/anti-fire.module';
@@ -22,9 +23,12 @@ import { RolletModule } from './catalog/rollet/rollet.module';
 import { SpeedRollModule } from './catalog/speed-roll/speed-roll.module';
 import { StreetModule } from './catalog/street/street.module';
 import { TransshipmentModule } from './catalog/transshipment/transshipment.module';
+
 import { SectionsModule as AvtomaticSectionModule } from './catalog/avtomatica/sections/sections.module';
 import { SlidingModule  } from './catalog/avtomatica/sliding/sliding.module';
 import { SwingModule } from './catalog/avtomatica/swing/swing.module';
+
+import { AluminiumModule } from './catalog/rollet/aluminium/aluminium.module';
 
 
 
@@ -48,14 +52,16 @@ import { SwingModule } from './catalog/avtomatica/swing/swing.module';
     TransshipmentModule,
     AvtomaticSectionModule,
     SlidingModule,
-    SwingModule
+    SwingModule,
+    AluminiumModule
   ],
   providers: [
     CatalogService,
     SectionsService,
     StreetService,
     AntiFireService,
-    AutomaticaService
+    AutomaticaService,
+    RolletService
   ],
   bootstrap: [AppComponent]
 })

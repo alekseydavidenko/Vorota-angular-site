@@ -66,7 +66,7 @@ export class StreetService {
     ),
     wineRred: new ColorPanelRal(
       '../../../assets/img/catalog/street/complectation/color-wine-red.jpg',
-      'RAL 7016 Бордо'
+      'RAL 3005 Бордо'
     ),
     wenge: new ColorPanelRal(
       '../../../assets/img/catalog/street/complectation/color-wenge.jpg',

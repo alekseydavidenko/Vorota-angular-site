@@ -57,6 +57,15 @@ const catalogRollet = [
   new Catalog(2, 'Из стальных профилеей с внутривальным приводом', 'assets/img/catalog/rollet/steel.jpg', 'steel'),
   new Catalog(3, 'Из стальных профилеей с навальным приводом', 'assets/img/catalog/rollet/steel-shaft.jpg', 'steel-shaft'),
 ];
+const catalogRolletAluminium = [
+  new Catalog(1, 'Профиль RH45', '../../assets/img/catalog/rollet/aluminium/rh-45.jpg', 'rh-45'),
+  new Catalog(2, 'Профиль RH58', '../../assets/img/catalog/rollet/aluminium/rh-58.jpg', 'rh-58'),
+  new Catalog(3, 'Профиль RH77', '../../assets/img/catalog/rollet/aluminium/rh-77.jpg', 'rh-77'),
+  new Catalog(4, 'Профиль RHE45', '../../assets/img/catalog/rollet/aluminium/rhe-45.jpg', 'rhe-45'),
+  new Catalog(5, 'Профиль RHE58', '../../assets/img/catalog/rollet/aluminium/rhe-58.jpg', 'rhe-58'),
+  new Catalog(6, 'Профиль RHE56G, RHE56GM', '../../assets/img/catalog/rollet/aluminium/rhe-56.jpg', 'rhe-56'),
+  new Catalog(7, 'Профиль RHE84G, RHE84GM', '../../assets/img/catalog/rollet/aluminium/rhe-84.jpg', 'rhe-84'),
+];
 const catalogSections = [
   new Catalog(1, 'С пружинами растяжения стандартных размеров', 'assets/img/catalog/section/standart.jpg', 'standart'),
   new Catalog(2, 'С пружинами растяжения', 'assets/img/catalog/section/stretching.jpg', 'stretching'),
@@ -116,6 +125,7 @@ const catalogAvtomaticSlidingPromise = Promise.resolve(catalogAvtomaticSliding);
 const catalogAvtomaticSwingPromise = Promise.resolve(catalogAvtomaticSwing);
 const catalogBarrierPromise = Promise.resolve(catalogBarrier);
 const catalogRolletPromise = Promise.resolve(catalogRollet);
+const catalogRolletAluminiumPromise = Promise.resolve(catalogRolletAluminium);
 const catalogSectionsPromise = Promise.resolve(catalogSections);
 const catalogStreetPromise = Promise.resolve(catalogStreet);
 const catalogSpeedRollPromise = Promise.resolve(catalogSpeedRoll);
@@ -147,6 +157,9 @@ export class CatalogService {
   }
   getCatalogRollet(): Promise<Catalog[]> {
     return catalogRolletPromise;
+  }
+  getCatalogRolletAluminium(): Promise<Catalog[]> {
+    return catalogRolletAluminiumPromise;
   }
   getCatalogSections(): Promise<Catalog[]> {
     return catalogSectionsPromise;

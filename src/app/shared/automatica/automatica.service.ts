@@ -392,12 +392,66 @@ export class AutomaticaService {
       'предназначен для обогрева электроприводов ворот и шлагбаумов при эксплуатации в условиях низких температур',
       []
     ),
-    // transmitter2Pro: new Product(
-    //   '../../../assets/img/catalog/avtomatica/acsessuars',
-    //   '',
-    //   '',
-    //   []
-    // ),
+    rightArrow: new Product(
+      '../../../assets/img/catalog/avtomatica/acsessuars/right-arrow.jpg',
+      'Стрела прямоугольная',
+      'длиной от 3 до 6 м.',
+      []
+    ),
+    roundArrow: new Product(
+      '../../../assets/img/catalog/avtomatica/acsessuars/round-arrow.jpg',
+      'Стрела круглая',
+      'длиной от 3 до 6 м (кратность длины: 1 м).',
+      []
+    ),
+    rightArrowLight: new Product(
+      '../../../assets/img/catalog/avtomatica/acsessuars/right-arrow-light.jpg',
+      'Стрела прямоугольная',
+      'с подсветкой длиной от 3 до 6 м (кратность длины: 1 м).',
+      []
+    ),
+    bindingArrow: new Product(
+      '../../../assets/img/catalog/avtomatica/acsessuars/binding-arrow.jpg',
+      'Комплект крепления',
+      'для круглой стрелы шлагбаума.',
+      []
+    ),
+    catherArrow: new Product(
+      '../../../assets/img/catalog/avtomatica/acsessuars/catcher-arrow.jpg',
+      'Ловитель',
+      'для стрелы шлагбаума с регулировкой высоты ловителя.',
+      []
+    ),
+    installationBarrier: new Product(
+      '../../../assets/img/catalog/avtomatica/acsessuars/installation-barrier.jpg',
+      'Монтажное основание',
+      'для бетонирования.',
+      []
+    ),
+    supportArrow: new Product(
+      '../../../assets/img/catalog/avtomatica/acsessuars/support-arrow.jpg',
+      'Шарнирная опора',
+      'для стрелы шлагбаума крепится на окончание стрелы.',
+      []
+    ),
+    br11Pro: new Product(
+      '../../../assets/img/catalog/avtomatica/acsessuars/br-11-pro.jpg',
+      'Пружина',
+      'балансировочная BR-11PRO.',
+      []
+    ),
+    br13Pro: new Product(
+      '../../../assets/img/catalog/avtomatica/acsessuars/br-13-pro.jpg',
+      'Пружина',
+      'балансировочная BR-13PRO.',
+      []
+    ),
+    skirtArrow: new Product(
+      '../../../assets/img/catalog/avtomatica/acsessuars/skirt-arrow.jpg',
+      'Юбочный комплект',
+      'для прямоугольной стрелы.',
+      []
+    ),
   };
 
   getProducts(index): Product[] {
