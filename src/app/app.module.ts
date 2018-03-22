@@ -13,6 +13,8 @@ import { StreetService } from './shared/street/street.service';
 import { AntiFireService } from './shared/anti-fire/anti-fire.service';
 import { AutomaticaService } from './shared/automatica/automatica.service';
 import { RolletService } from './shared/rollet/rollet.service';
+import { SpeedRollService } from './shared/speed-roll/speed-roll.service';
+import { TransshipmentService } from './shared/transshipment/transshipment.service';
 
 import { SectionsModule } from './catalog/sections/sections.module';
 import { AntiFireModule } from './catalog/anti-fire/anti-fire.module';
@@ -61,7 +63,9 @@ import { AluminiumModule } from './catalog/rollet/aluminium/aluminium.module';
     StreetService,
     AntiFireService,
     AutomaticaService,
-    RolletService
+    RolletService,
+    SpeedRollService,
+    TransshipmentService,
   ],
   bootstrap: [AppComponent]
 })

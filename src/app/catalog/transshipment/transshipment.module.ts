@@ -23,6 +23,21 @@ import { BridgePortableComponent } from './bridge-portable/bridge-portable.compo
     CommonModule,
     TransshipmentRoutingModule
   ],
-  declarations: [TransshipmentComponent, PlatformSwingOutComponent, PlatformTelescopicLipComponent, PlatformMechanicalComponent, PlatformConsoleTypeComponent, PlatformMechanicalMinidockComponent, HermeticFoldingFrameComponent, HermeticRigidFrameComponent, HermeticInflatableComponent, HermeticCushionComponent, TambourOverloadStandardComponent, TambourOverloadLightSeriesComponent, FarmRemoteComponent, BridgeFoldingSlidingComponent, BridgePortableComponent]
+  declarations: [
+    TransshipmentComponent,
+    PlatformSwingOutComponent,
+    PlatformTelescopicLipComponent,
+    PlatformMechanicalComponent,
+    PlatformConsoleTypeComponent,
+    PlatformMechanicalMinidockComponent,
+    HermeticFoldingFrameComponent,
+    HermeticRigidFrameComponent,
+    HermeticInflatableComponent,
+    HermeticCushionComponent,
+    TambourOverloadStandardComponent,
+    TambourOverloadLightSeriesComponent,
+    FarmRemoteComponent,
+    BridgeFoldingSlidingComponent,
+    BridgePortableComponent]
 })
 export class TransshipmentModule { }

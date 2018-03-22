@@ -1,3 +1,65 @@
-<p>
-  bridge-portable works!
-</p>
+<!-- Product main start -->
+<div class="product">
+  <h2 class="product__title title__after">Мост переносной</h2>
+  <p class="product__description">
+    Переносные мосты серии МТ используются для организации погрузочно-разгрузочных работ в случае, когда поток продукции не слишком
+    велик, и нет необходимости устанавливать стационарный док. Мосты предназначены для использования с автомобилями, имеющими
+    примерно одинаковую высоту, которая должна быть больше уровня рампы. Переносные мосты устанавливаются между рампой и
+    кузовом автомобиля, компенсируя разницу в высоте до 240 мм. Перемещение моста к необходимому месту осуществляется с помощью
+    погрузчика. Переносные мосты DoorHan отвечают директиве DIN EN1398 и имеют сертификаты соответствия.
+  </p>
+  <img class="product__img" src="../../../../assets/img/catalog/transshipment/posters/poster-bridge-portable.jpg" alt="Мост переносной">
+</div>
+<!-- Product main end -->
+<!-- Design start -->
+<div class="design">
+  <h3 class="design__title title__after">Дизайн</h3>
+  <!-- Type start -->
+  <h4 class="design__caption">Типы поверхностей</h4>
+  <div class="design__type-panel row justify-content-center">
+    <div class="design__type-panel__item" *ngFor="let type of types">
+      <img class="design__type-panel__item-img" src="{{ type.img }}" alt="{{ type.title }}">
+      <div>{{ type.title }}</div>
+    </div>
+  </div>
+  <!-- Type end -->
+  <!-- Color start -->
+  <h4 class="design__caption">Цвет</h4>
+  <div class="design__color-wood-panel row justify-content-center">
+    <div class="design__color-wood-panel__item" *ngFor="let color of colors">
+      <img class="design__color-wood-panel__item-img" src="{{ color.img }}" alt="{{ color.title }}">
+      <div>{{ color.title }}</div>
+    </div>
+  </div>
+  <!-- Color end -->
+</div>
+<!-- Design end -->
+<!-- Characteristics start -->
+<div class="characteristics">
+  <h3 class="characteristics__title title__after">Таблица размеров</h3>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Параметр</th>
+        <th>Показатель</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of size">
+        <td>{{ item.parametr }}</td>
+        <td>{{ item.index }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- Characteristics end -->
+<!-- Constructuin start -->
+<div class="constuction">
+  <h3 class="constuction__title title__after">Конструкция</h3>
+  <img class="constuction__img" src="../../../../assets/img/catalog//transshipment/posters/construction-bridge-portable.jpg"
+    alt="Конструкция" title="Конструкция">
+  <div class="constuction__description">
+    <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
+  </div>
+</div>
+<!-- Constructuin end -->

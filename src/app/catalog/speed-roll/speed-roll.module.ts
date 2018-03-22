@@ -16,6 +16,15 @@ import { FilmSwingingComponent } from './film-swinging/film-swinging.component';
     CommonModule,
     SpeedRollRoutingModule
   ],
-  declarations: [SpeedRollComponent, InsideComponent, OutsideComponent, FoodComponent, ColdComponent, CleanComponent, FilmVeilsComponent, FilmSwingingComponent]
+  declarations: [
+    SpeedRollComponent,
+    InsideComponent,
+    OutsideComponent,
+    FoodComponent,
+    ColdComponent,
+    CleanComponent,
+    FilmVeilsComponent,
+    FilmSwingingComponent
+  ]
 })
 export class SpeedRollModule { }

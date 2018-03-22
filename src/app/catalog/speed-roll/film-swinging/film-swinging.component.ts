@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, forwardRef } from '@angular/core';
+
+import { Size, Construction } from '../../../shared/idex';
+import { CharacteristicSize, Constructions } from './characteristics';
 
 @Component({
   selector: 'app-film-swinging',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilmSwingingComponent implements OnInit {
 
-  constructor() { }
+  public constructions: Construction[];
+  public size: Size[];
+
+  constructor() {}
 
   ngOnInit() {
+    this.constructions = Constructions;
+    this.size = CharacteristicSize;
   }
 
 }

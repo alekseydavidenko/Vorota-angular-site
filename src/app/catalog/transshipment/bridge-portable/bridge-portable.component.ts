@@ -1,4 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, forwardRef } from '@angular/core';
+
+import { Size, Construction } from '../../../shared/idex';
+import { CharacteristicSize, Constructions } from './characteristics';
+
+import { Color } from '../../../shared/transshipment/color';
+
+import { TransshipmentService } from '../../../shared/transshipment/transshipment.service';
 
 @Component({
   selector: 'app-bridge-portable',
@@ -7,9 +14,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BridgePortableComponent implements OnInit {
 
-  constructor() { }
+  public types: Color[];
+  public colors: Color[];
+
+  public constructions: Construction[];
+  public size: Size[];
+
+  constructor(
+    @Inject(forwardRef(() => TransshipmentService))
+    public transshipmentService: TransshipmentService
+  ) {}
 
   ngOnInit() {
+    this.types = this.transshipmentService.getType([
+      'lenticular',
+    ]);
+    this.colors = this.transshipmentService.getColor([
+      'black',
+      'blue',
+    ]);
+
+    this.constructions = Constructions;
+    this.size = CharacteristicSize;
   }
 
 }
