@@ -15,6 +15,7 @@ import { AutomaticaService } from './shared/automatica/automatica.service';
 import { RolletService } from './shared/rollet/rollet.service';
 import { SpeedRollService } from './shared/speed-roll/speed-roll.service';
 import { TransshipmentService } from './shared/transshipment/transshipment.service';
+import { RampAndTableService } from './shared/ramp-and-table/ramp-and-table.service';
 
 import { SectionsModule } from './catalog/sections/sections.module';
 import { AntiFireModule } from './catalog/anti-fire/anti-fire.module';
@@ -66,6 +67,7 @@ import { AluminiumModule } from './catalog/rollet/aluminium/aluminium.module';
     RolletService,
     SpeedRollService,
     TransshipmentService,
+    RampAndTableService,
   ],
   bootstrap: [AppComponent]
 })

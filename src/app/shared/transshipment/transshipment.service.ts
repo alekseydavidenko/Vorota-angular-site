@@ -5,14 +5,14 @@ import { Acsessuar } from './acsessuar';
 
 @Injectable()
 export class TransshipmentService {
-  type = {
+  private type = {
     lenticular: new Color(
       '../../../assets/img/catalog/transshipment/complectations/type-lenticular-corrugation.jpg',
       'Чечевичное рифление'
     ),
   };
 
-  color = {
+  private color = {
     black: new Color(
       '../../../assets/img/catalog/transshipment/complectations/color-black.jpg',
       'Черный RAL 9005'
@@ -23,7 +23,7 @@ export class TransshipmentService {
     ),
   };
 
-  colorWall = {
+  private colorWall = {
     white: new Color(
       '../../../assets/img/catalog/transshipment/complectations/color-white.jpg',
       'Белый RAL 9003'
@@ -42,7 +42,7 @@ export class TransshipmentService {
     ),
   };
 
-  acsessuars = {
+  private acsessuars = {
     dcuh1: new Acsessuar(
       '../../../assets/img/catalog/transshipment/acsessuars/dcuh-1.jpg',
       'Блок управления DCUH-1',
@@ -216,7 +216,7 @@ export class TransshipmentService {
     ),
   };
 
-  getType(index): Color[] {
+  public getType(index): Color[] {
     const obj: Color[] = [];
 
     index.forEach(element => {
@@ -229,7 +229,7 @@ export class TransshipmentService {
 
     return obj;
   }
-  getColor(index): Color[] {
+  public getColor(index): Color[] {
     const obj: Color[] = [];
 
     index.forEach(element => {
@@ -242,7 +242,7 @@ export class TransshipmentService {
 
     return obj;
   }
-  getColorWall(index): Color[] {
+  public getColorWall(index): Color[] {
     const obj: Color[] = [];
 
     index.forEach(element => {
@@ -255,7 +255,7 @@ export class TransshipmentService {
 
     return obj;
   }
-  getAcsessuars(index): Acsessuar[] {
+  public getAcsessuars(index): Acsessuar[] {
     const obj: Acsessuar[] = [];
 
     index.forEach(element => {
