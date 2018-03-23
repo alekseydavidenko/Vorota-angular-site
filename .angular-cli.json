@@ -54,8 +54,12 @@
     }
   },
   "defaults": {
-    "lintFix": true,
     "styleExt": "css",
-    "component": {}
+    "lintFix": true,
+    "component": {
+    }
+  },
+  "warnings": {
+    "typescriptMismatch": false
   }
 }
