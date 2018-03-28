@@ -1,56 +1,59 @@
-<!-- Product main start -->
-<div class="product">
-  <h2 class="product__title title__after">Рампа мобильная укороченная</h2>
-  <p class="product__description">
-    Мобильные рампы DoorHan предназначены для обеспечения доступа автопогрузчика с поверхности земли в кузов автомобиля.
-    Они не требуют специальной подготовки для запуска, позволяя проводить погрузочно-разгрузочные работы, не прибегая к строительству стационарной рампы.
-    Все рампы имеют схожий принцип работы. Рампа поднимается при помощи механического или гидравлического привода, оборудованного системой безопасности,
-    и перемещается погрузчиком к автомобилю. Рампа с опорой на кузов автомобиля ложится на кузов, рампа с собственными опорами устанавливается на опоры.
-    После окончания работ рампа поднимается и с помощью погрузчика транспортируется к месту хранения.
-  </p>
-  <img class="product__img" src="../../../../assets/img/catalog/ramp-and-table/posters/poster-shortened.jpg" alt="Рампа мобильная укороченная">
-</div>
-<!-- Product main end -->
-<!-- Design start -->
-<div class="design">
-  <h3 class="design__title title__after">Дизайн</h3>
-  <!-- Color start -->
-  <h4 class="design__caption">Цвет</h4>
-  <div class="design__color-wood-panel row justify-content-center">
-    <div class="design__color-wood-panel__item" *ngFor="let color of colors">
-      <img class="design__color-wood-panel__item-img" src="{{ color.img }}" alt="{{ color.title }}">
-      <div>{{ color.title }}</div>
+<div class="container">
+  <!-- Product main start -->
+  <div class="product">
+    <h2 class="product__title title__after">Рампа мобильная укороченная</h2>
+    <p class="product__description">
+      Мобильные рампы DoorHan предназначены для обеспечения доступа автопогрузчика с поверхности земли в кузов автомобиля. Они
+      не требуют специальной подготовки для запуска, позволяя проводить погрузочно-разгрузочные работы, не прибегая к строительству
+      стационарной рампы. Все рампы имеют схожий принцип работы. Рампа поднимается при помощи механического или гидравлического
+      привода, оборудованного системой безопасности, и перемещается погрузчиком к автомобилю. Рампа с опорой на кузов автомобиля
+      ложится на кузов, рампа с собственными опорами устанавливается на опоры. После окончания работ рампа поднимается и
+      с помощью погрузчика транспортируется к месту хранения.
+    </p>
+    <img class="product__img" src="../../../../assets/img/catalog/ramp-and-table/posters/poster-shortened.jpg" alt="Рампа мобильная укороченная">
+  </div>
+  <!-- Product main end -->
+  <!-- Design start -->
+  <div class="design">
+    <h3 class="design__title title__after">Дизайн</h3>
+    <!-- Color start -->
+    <h4 class="design__caption">Цвет</h4>
+    <div class="design__color-wood-panel row justify-content-center">
+      <div class="design__color-wood-panel__item" *ngFor="let color of colors">
+        <img class="design__color-wood-panel__item-img" src="{{ color.img }}" alt="{{ color.title }}">
+        <div>{{ color.title }}</div>
+      </div>
+    </div>
+    <!-- Color end -->
+  </div>
+  <!-- Design end -->
+  <!-- Characteristics start -->
+  <div class="characteristics">
+    <h3 class="characteristics__title title__after">Таблица размеров</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Параметр</th>
+          <th>Показатель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of size">
+          <td>{{ item.parametr }}</td>
+          <td>{{ item.index }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Characteristics end -->
+  <!-- Constructuin start -->
+  <div class="constuction">
+    <h3 class="constuction__title title__after">Конструкция</h3>
+    <img class="constuction__img" src="../../../../assets/img/catalog/ramp-and-table/posters/construction-shortened.jpg" alt="Конструкция"
+      title="Конструкция">
+    <div class="constuction__description">
+      <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
     </div>
   </div>
-  <!-- Color end -->
+  <!-- Constructuin end -->
 </div>
-<!-- Design end -->
-<!-- Characteristics start -->
-<div class="characteristics">
-  <h3 class="characteristics__title title__after">Таблица размеров</h3>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Параметр</th>
-        <th>Показатель</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of size">
-        <td>{{ item.parametr }}</td>
-        <td>{{ item.index }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<!-- Characteristics end -->
-<!-- Constructuin start -->
-<div class="constuction">
-  <h3 class="constuction__title title__after">Конструкция</h3>
-  <img class="constuction__img" src="../../../../assets/img/catalog/ramp-and-table/posters/construction-shortened.jpg"
-    alt="Конструкция" title="Конструкция">
-  <div class="constuction__description">
-    <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
-  </div>
-</div>
-<!-- Constructuin end -->

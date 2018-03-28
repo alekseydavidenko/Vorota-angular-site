@@ -1,86 +1,93 @@
-<!-- Product main start -->
-<div class="product">
-  <h2 class="product__title title__after">Откатные противопожарные ворота с классом огнестойкости EI60, EI90</h2>
-  <p class="product__description">
-    Установка противопожарных сдвижных ворот является одним из эффективных методов локализации очага возгорания.
-    Противопожарные ворота удерживают распространение огня и продуктов горения, тем самым увеличивают время,
-    необходимое для принятия жизненно важных решений. Огнестойкость ворот обеспечивается за счет использования в их
-    конструкции панелей с наполнителем из минеральной ваты. На полотно ворот и в проем устанавливаются специальные
-    профили и терморасширяющаяся лента, которая при возрастании температуры увеличивается в объеме и герметизирует проем.
-    По техническому заданию заказчика изготавливаются различные конструкции с применением дополнительной комплектации:
-    врезной калитки, системы «антипаника», автоматизации закрытия створок ворот и калиток. Также могут разрабатываться
-    нестандартные решения силами собственного конструкторского бюро. Противопожарные откатные ворота DoorHan полностью отвечают
-    требованиям европейских строительных стандартов и имеют сертификаты соответствия.</p>
-  <p><b>Принцип работы:</b> одностворчатые ворота могут открываться в любом направлении вдоль проема, двустворчатые — в разные стороны.</p>
-  <p><b>Преимущества:</b> установка противопожарных сдвижных ворот является оптимальным способом перекрытия больших проемов и
-    защиты помещений от распространения огня.</p>
-  <p><b>Особенности конструкции:</b> изготавливаются с одной или двумя створками; в полотно может
-    быть врезана калитка для большего удобства эксплуатации.</p>
-  <p class="product__description"><b>Дизайн:</b> стандартно полотно окрашивается в серый цвет;
-    опционально ворота могут быть окрашены в любой цвет по карте RAL.</p>
-  <img class="product__img" src="../../../../assets/img/catalog/anti-fire/poster/poster-sliding.jpg" alt="Откатные противопожарные">
-</div>
-<!-- Product main end -->
-<!-- Design start -->
-<div class="design">
-  <h3 class="design__title title__after">Дизайн</h3>
-  <!-- Type Panel start -->
-  <h4 class="design__caption">Типы поверхностей</h4>
-  <div class="design__type-panel row justify-content-center">
-    <div class="design__type-panel__item" *ngFor="let typePanel of typesPanels">
-      <img class="design__type-panel__item-img" src="{{ typePanel.img }}" alt="{{ typePanel.title }}">
-      <div>{{ typePanel.title }}</div>
+<div class="container">
+  <!-- Product main start -->
+  <div class="product">
+    <h2 class="product__title title__after">Откатные противопожарные ворота с классом огнестойкости EI60, EI90</h2>
+    <p class="product__description">
+      Установка противопожарных сдвижных ворот является одним из эффективных методов локализации очага возгорания. Противопожарные
+      ворота удерживают распространение огня и продуктов горения, тем самым увеличивают время, необходимое для принятия жизненно
+      важных решений. Огнестойкость ворот обеспечивается за счет использования в их конструкции панелей с наполнителем из
+      минеральной ваты. На полотно ворот и в проем устанавливаются специальные профили и терморасширяющаяся лента, которая
+      при возрастании температуры увеличивается в объеме и герметизирует проем. По техническому заданию заказчика изготавливаются
+      различные конструкции с применением дополнительной комплектации: врезной калитки, системы «антипаника», автоматизации
+      закрытия створок ворот и калиток. Также могут разрабатываться нестандартные решения силами собственного конструкторского
+      бюро. Противопожарные откатные ворота DoorHan полностью отвечают требованиям европейских строительных стандартов и
+      имеют сертификаты соответствия.</p>
+    <p>
+      <b>Принцип работы:</b> одностворчатые ворота могут открываться в любом направлении вдоль проема, двустворчатые — в разные
+      стороны.</p>
+    <p>
+      <b>Преимущества:</b> установка противопожарных сдвижных ворот является оптимальным способом перекрытия больших проемов
+      и защиты помещений от распространения огня.</p>
+    <p>
+      <b>Особенности конструкции:</b> изготавливаются с одной или двумя створками; в полотно может быть врезана калитка для
+      большего удобства эксплуатации.</p>
+    <p class="product__description">
+      <b>Дизайн:</b> стандартно полотно окрашивается в серый цвет; опционально ворота могут быть окрашены в любой цвет по карте
+      RAL.</p>
+    <img class="product__img" src="../../../../assets/img/catalog/anti-fire/poster/poster-sliding.jpg" alt="Откатные противопожарные">
+  </div>
+  <!-- Product main end -->
+  <!-- Design start -->
+  <div class="design">
+    <h3 class="design__title title__after">Дизайн</h3>
+    <!-- Type Panel start -->
+    <h4 class="design__caption">Типы поверхностей</h4>
+    <div class="design__type-panel row justify-content-center">
+      <div class="design__type-panel__item" *ngFor="let typePanel of typesPanels">
+        <img class="design__type-panel__item-img" src="{{ typePanel.img }}" alt="{{ typePanel.title }}">
+        <div>{{ typePanel.title }}</div>
+      </div>
+    </div>
+    <!-- Type Panel end -->
+    <!-- Color Panel Ral start -->
+    <h4 class="design__caption">Цвет панелей по RAL карте</h4>
+    <div class="design__color-ral-panel row justify-content-center">
+      <div class="design__color-ral-panel__item" *ngFor="let colorPanelRal of colorsPanelsRal">
+        <img class="design__color-ral-panel__item-img" src="{{ colorPanelRal.img }}" alt="{{ colorPanelRal.title }}">
+        <div class="design__color-ral-panel__item-description">{{ colorPanelRal.title }}</div>
+      </div>
+    </div>
+    <!-- Color Panel Ral end -->
+  </div>
+  <!-- Design end -->
+  <!-- Acsessuar vorot start -->
+  <div class="acsessuars">
+    <h3 class="acsessuars__title title__after">Аксессуары</h3>
+    <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
+      <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
+      <p class="acsessuars__item-description col-xl-9 col-md-8">
+        <b>{{ acsessuar.title }}</b>
+        <br>{{ acsessuar.description }}</p>
     </div>
   </div>
-  <!-- Type Panel end -->
-  <!-- Color Panel Ral start -->
-  <h4 class="design__caption">Цвет панелей по RAL карте</h4>
-  <div class="design__color-ral-panel row justify-content-center">
-    <div class="design__color-ral-panel__item" *ngFor="let colorPanelRal of colorsPanelsRal">
-      <img class="design__color-ral-panel__item-img" src="{{ colorPanelRal.img }}" alt="{{ colorPanelRal.title }}">
-      <div class="design__color-ral-panel__item-description">{{ colorPanelRal.title }}</div>
+  <!-- Acsessuar vorot end -->
+  <!-- Characteristics start -->
+  <div class="characteristics">
+    <h3 class="characteristics__title title__after">Таблица размеров</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Параметр</th>
+          <th>Показатель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of size">
+          <td>{{ item.parametr }}</td>
+          <td>{{ item.index }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Characteristics end -->
+  <!-- Constructuin start -->
+  <div class="constuction">
+    <h3 class="constuction__title title__after">Конструкция</h3>
+    <img class="constuction__img" src="../../../../assets/img/catalog/anti-fire/poster/construction-sliding.jpg" alt="Конструкция"
+      title="Конструкция">
+    <div class="constuction__description">
+      <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
     </div>
   </div>
-  <!-- Color Panel Ral end -->
+  <!-- Constructuin end -->
 </div>
-<!-- Design end -->
-<!-- Acsessuar vorot start -->
-<div class="acsessuars">
-  <h3 class="acsessuars__title title__after">Аксессуары</h3>
-  <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
-    <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
-    <p class="acsessuars__item-description col-xl-9 col-md-8">
-      <b>{{ acsessuar.title }}</b>
-      <br>{{ acsessuar.description }}</p>
-  </div>
-</div>
-<!-- Acsessuar vorot end -->
-<!-- Characteristics start -->
-<div class="characteristics">
-  <h3 class="characteristics__title title__after">Таблица размеров</h3>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Параметр</th>
-        <th>Показатель</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of size">
-        <td>{{ item.parametr }}</td>
-        <td>{{ item.index }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<!-- Characteristics end -->
-<!-- Constructuin start -->
-<div class="constuction">
-  <h3 class="constuction__title title__after">Конструкция</h3>
-  <img class="constuction__img" src="../../../../assets/img/catalog/anti-fire/poster/construction-sliding.jpg" alt="Конструкция"
-    title="Конструкция">
-  <div class="constuction__description">
-    <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
-  </div>
-</div>
-<!-- Constructuin end -->

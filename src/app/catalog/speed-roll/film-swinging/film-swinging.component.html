@@ -1,40 +1,42 @@
-<!-- Product main start -->
-<div class="product">
-  <h2 class="product__title title__after">Пленочные маятниковые двери серии SSD</h2>
-  <p class="product__description">
-    Распашные пленочные ворота ПВХ предназначены для изоляции и сохранения микроклимата помещений на объектах промышленного,
-    складского, торгового и другого назначения. Конструкция ворот позволяет им возвращаться в исходное положение
-    и автоматически смыкаться сразу после прохода сквозь них. Ворота отличаются бесшумной работой, легкостью функционирования и быстрой очисткой.</p>
-  <img class="product__img" src="../../../../assets/img/catalog/speed-roll/posters/poster-film-swinging.jpg" alt="SSD">
-</div>
-<!-- Product main end -->
-<!-- Characteristics start -->
-<div class="characteristics">
-  <h3 class="characteristics__title title__after">Таблица размеров</h3>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Параметр</th>
-        <th>Показатель</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of size">
-        <td>{{ item.parametr }}</td>
-        <td>{{ item.index }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<!-- Characteristics end -->
-<!-- Constructuin start -->
-<div class="constuction">
-  <h3 class="constuction__title title__after">Конструкция</h3>
-  <img class="constuction__img" src="../../../../assets/img/catalog/speed-roll/posters/construction-film-swinging.jpg" alt="Конструкция"
-    title="Конструкция">
-  <div class="constuction__description">
-    <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
+<div class="container">
+  <!-- Product main start -->
+  <div class="product">
+    <h2 class="product__title title__after">Пленочные маятниковые двери серии SSD</h2>
+    <p class="product__description">
+      Распашные пленочные ворота ПВХ предназначены для изоляции и сохранения микроклимата помещений на объектах промышленного,
+      складского, торгового и другого назначения. Конструкция ворот позволяет им возвращаться в исходное положение и автоматически
+      смыкаться сразу после прохода сквозь них. Ворота отличаются бесшумной работой, легкостью функционирования и быстрой
+      очисткой.</p>
+    <img class="product__img" src="../../../../assets/img/catalog/speed-roll/posters/poster-film-swinging.jpg" alt="SSD">
   </div>
+  <!-- Product main end -->
+  <!-- Characteristics start -->
+  <div class="characteristics">
+    <h3 class="characteristics__title title__after">Таблица размеров</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Параметр</th>
+          <th>Показатель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of size">
+          <td>{{ item.parametr }}</td>
+          <td>{{ item.index }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Characteristics end -->
+  <!-- Constructuin start -->
+  <div class="constuction">
+    <h3 class="constuction__title title__after">Конструкция</h3>
+    <img class="constuction__img" src="../../../../assets/img/catalog/speed-roll/posters/construction-film-swinging.jpg" alt="Конструкция"
+      title="Конструкция">
+    <div class="constuction__description">
+      <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
+    </div>
+  </div>
+  <!-- Constructuin end -->
 </div>
-<!-- Constructuin end -->
-

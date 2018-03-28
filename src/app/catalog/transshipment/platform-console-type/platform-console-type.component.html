@@ -1,75 +1,78 @@
-<!-- Product main start -->
-<div class="product">
-  <h2 class="product__title title__after">Платформа уравнительная консольного типа с поворотной аппарелью серии</h2>
-  <p class="product__description">
-    Электрогидравлические уравнительные платформы с поворотной аппарелью консольного типа серии DLHHC являются типовыми устройствами
-    для оборудования перегрузочных мест. При активизации платформа поднимается, и аппарель, поворачиваясь, открывается.
-    Платформа опускается до тех пор, пока не достигнет пола кузова автомобиля. После окончания погрузочно-разгрузочных работ платформа поднимается,
-    аппарель опускается, и платформа возвращается в исходное положение. Платформа имеет универсальный тип монтажа.
-  </p>
-  <img class="product__img" src="../../../../assets/img/catalog/transshipment/posters/poster-platform-console-type.jpg" alt="Платформа уравнительная консльная">
-</div>
-<!-- Product main end -->
-<!-- Design start -->
-<div class="design">
-  <h3 class="design__title title__after">Дизайн</h3>
-  <!-- Type start -->
-  <h4 class="design__caption">Типы поверхностей</h4>
-  <div class="design__type-panel row justify-content-center">
-    <div class="design__type-panel__item" *ngFor="let type of types">
-      <img class="design__type-panel__item-img" src="{{ type.img }}" alt="{{ type.title }}">
-      <div>{{ type.title }}</div>
+<div class="container">
+  <!-- Product main start -->
+  <div class="product">
+    <h2 class="product__title title__after">Платформа уравнительная консольного типа с поворотной аппарелью серии</h2>
+    <p class="product__description">
+      Электрогидравлические уравнительные платформы с поворотной аппарелью консольного типа серии DLHHC являются типовыми устройствами
+      для оборудования перегрузочных мест. При активизации платформа поднимается, и аппарель, поворачиваясь, открывается.
+      Платформа опускается до тех пор, пока не достигнет пола кузова автомобиля. После окончания погрузочно-разгрузочных
+      работ платформа поднимается, аппарель опускается, и платформа возвращается в исходное положение. Платформа имеет универсальный
+      тип монтажа.
+    </p>
+    <img class="product__img" src="../../../../assets/img/catalog/transshipment/posters/poster-platform-console-type.jpg" alt="Платформа уравнительная консльная">
+  </div>
+  <!-- Product main end -->
+  <!-- Design start -->
+  <div class="design">
+    <h3 class="design__title title__after">Дизайн</h3>
+    <!-- Type start -->
+    <h4 class="design__caption">Типы поверхностей</h4>
+    <div class="design__type-panel row justify-content-center">
+      <div class="design__type-panel__item" *ngFor="let type of types">
+        <img class="design__type-panel__item-img" src="{{ type.img }}" alt="{{ type.title }}">
+        <div>{{ type.title }}</div>
+      </div>
+    </div>
+    <!-- Type end -->
+    <!-- Color start -->
+    <h4 class="design__caption">Цвет</h4>
+    <div class="design__color-wood-panel row justify-content-center">
+      <div class="design__color-wood-panel__item" *ngFor="let color of colors">
+        <img class="design__color-wood-panel__item-img" src="{{ color.img }}" alt="{{ color.title }}">
+        <div>{{ color.title }}</div>
+      </div>
+    </div>
+    <!-- Color end -->
+  </div>
+  <!-- Design end -->
+  <!-- Acsessuar vorot start -->
+  <div class="acsessuars">
+    <h3 class="acsessuars__title title__after">Аксессуары</h3>
+    <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
+      <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
+      <p class="acsessuars__item-description col-xl-9 col-md-8">
+        <b>{{ acsessuar.title }}</b>
+        <br>{{ acsessuar.description }}</p>
     </div>
   </div>
-  <!-- Type end -->
-  <!-- Color start -->
-  <h4 class="design__caption">Цвет</h4>
-  <div class="design__color-wood-panel row justify-content-center">
-    <div class="design__color-wood-panel__item" *ngFor="let color of colors">
-      <img class="design__color-wood-panel__item-img" src="{{ color.img }}" alt="{{ color.title }}">
-      <div>{{ color.title }}</div>
+  <!-- Acsessuar vorot end -->
+  <!-- Characteristics start -->
+  <div class="characteristics">
+    <h3 class="characteristics__title title__after">Таблица размеров</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Параметр</th>
+          <th>Показатель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of size">
+          <td>{{ item.parametr }}</td>
+          <td>{{ item.index }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Characteristics end -->
+  <!-- Constructuin start -->
+  <div class="constuction">
+    <h3 class="constuction__title title__after">Конструкция</h3>
+    <img class="constuction__img" src="../../../../assets/img/catalog//transshipment/posters/construction-platform-console-type.jpg"
+      alt="Конструкция" title="Конструкция">
+    <div class="constuction__description">
+      <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
     </div>
   </div>
-  <!-- Color end -->
+  <!-- Constructuin end -->
 </div>
-<!-- Design end -->
-<!-- Acsessuar vorot start -->
-<div class="acsessuars">
-  <h3 class="acsessuars__title title__after">Аксессуары</h3>
-  <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
-    <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
-    <p class="acsessuars__item-description col-xl-9 col-md-8">
-      <b>{{ acsessuar.title }}</b>
-      <br>{{ acsessuar.description }}</p>
-  </div>
-</div>
-<!-- Acsessuar vorot end -->
-<!-- Characteristics start -->
-<div class="characteristics">
-  <h3 class="characteristics__title title__after">Таблица размеров</h3>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Параметр</th>
-        <th>Показатель</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of size">
-        <td>{{ item.parametr }}</td>
-        <td>{{ item.index }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<!-- Characteristics end -->
-<!-- Constructuin start -->
-<div class="constuction">
-  <h3 class="constuction__title title__after">Конструкция</h3>
-  <img class="constuction__img" src="../../../../assets/img/catalog//transshipment/posters/construction-platform-console-type.jpg" alt="Конструкция"
-    title="Конструкция">
-  <div class="constuction__description">
-    <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
-  </div>
-</div>
-<!-- Constructuin end -->

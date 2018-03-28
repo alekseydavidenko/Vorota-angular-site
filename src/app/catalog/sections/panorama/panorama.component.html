@@ -1,100 +1,102 @@
-<!-- Product main start -->
-<div class="product">
-  <h2 class="product__title title__after">Панорамные</h2>
-  <p class="product__description">
-    Панорамные секционные ворота серии ISD02 полностью или частично состоят из панорамных панелей, благодаря чему являются идеальным
-    вариантом для установки в зданиях с остекленными фасадами, например, в автомобильных салонах. Они не уступают по прочности
-    промышленным секционным воротам серии ISD01 благодаря тому, что панорамные панели изготавливаются из прочных алюминиевых
-    профилей. Для повышения энергосберегающих и термоизоляционных свойств ворот, компания DoorHan предлагает комбинировать
-    панорамные панели с сэндвич-панелями, а также использовать алюминиевые профили T-bridge, которые оснащены термовставкой
-    из полиамида. Панорамные секционные ворота серии ISD02 имеют те же устройства безопасности и базовую комплектацию, что
-    и промышленные секционные ворота серии ISD01. Автоматизируются электроприводами промышленных и гаражных ворот, в зависимости
-    от площади полотна.
-  </p>
-  <p>
-    <b>Изготовление:</b> по индивидуальным размерам заказчика.</p>
-  <p>
-    <b>Преимущества:</b> максимальный обзор внутреннего и внешнего пространства; современный дизайн; устойчивы к коррозии и
-    долго сохраняют привлекательный вид; возможность комбинации панорамных и сэндвич-панелей.</p>
-  <p>
-    <b>Механизм балансировки полотна:</b> торсионный механиз с ресурсом 25000 циклов</p>
-  <p class="product__description">
-    <b>Дизайн:</b> панель с однокамерным стеклопакетом (оргстекло или ударопрочный поликарбонат), панель с однослойным оргстеклом,
-    панель с перфорированным алюминиевым листом.
-  </p>
+<div class="container">
+  <!-- Product main start -->
+  <div class="product">
+    <h2 class="product__title title__after">Панорамные</h2>
+    <p class="product__description">
+      Панорамные секционные ворота серии ISD02 полностью или частично состоят из панорамных панелей, благодаря чему являются идеальным
+      вариантом для установки в зданиях с остекленными фасадами, например, в автомобильных салонах. Они не уступают по прочности
+      промышленным секционным воротам серии ISD01 благодаря тому, что панорамные панели изготавливаются из прочных алюминиевых
+      профилей. Для повышения энергосберегающих и термоизоляционных свойств ворот, компания DoorHan предлагает комбинировать
+      панорамные панели с сэндвич-панелями, а также использовать алюминиевые профили T-bridge, которые оснащены термовставкой
+      из полиамида. Панорамные секционные ворота серии ISD02 имеют те же устройства безопасности и базовую комплектацию,
+      что и промышленные секционные ворота серии ISD01. Автоматизируются электроприводами промышленных и гаражных ворот,
+      в зависимости от площади полотна.
+    </p>
+    <p>
+      <b>Изготовление:</b> по индивидуальным размерам заказчика.</p>
+    <p>
+      <b>Преимущества:</b> максимальный обзор внутреннего и внешнего пространства; современный дизайн; устойчивы к коррозии
+      и долго сохраняют привлекательный вид; возможность комбинации панорамных и сэндвич-панелей.</p>
+    <p>
+      <b>Механизм балансировки полотна:</b> торсионный механиз с ресурсом 25000 циклов</p>
+    <p class="product__description">
+      <b>Дизайн:</b> панель с однокамерным стеклопакетом (оргстекло или ударопрочный поликарбонат), панель с однослойным оргстеклом,
+      панель с перфорированным алюминиевым листом.
+    </p>
 
-  <img class="product__img" src="../../../../assets/img/catalog/section/poster/poster-panorama.jpg" alt="Панорамные">
-</div>
-<!-- Product main end -->
-<!-- Design start -->
-<div class="design">
-  <h3 class="design__title title__after">Дизайн</h3>
-  <!-- View Panel start -->
-  <h4 class="design__caption">Виды Панелей</h4>
-  <div class="design__view-panel row justify-content-center">
-    <div class="design__view-panel__item" *ngFor="let viewPanel of viewsPanels">
-      <img class="design__view-panel__item-img" src="{{ viewPanel.img }}" alt="{{ viewPanel.title }}">
-      <div>{{ viewPanel.title }}</div>
+    <img class="product__img" src="../../../../assets/img/catalog/section/poster/poster-panorama.jpg" alt="Панорамные">
+  </div>
+  <!-- Product main end -->
+  <!-- Design start -->
+  <div class="design">
+    <h3 class="design__title title__after">Дизайн</h3>
+    <!-- View Panel start -->
+    <h4 class="design__caption">Виды Панелей</h4>
+    <div class="design__view-panel row justify-content-center">
+      <div class="design__view-panel__item" *ngFor="let viewPanel of viewsPanels">
+        <img class="design__view-panel__item-img" src="{{ viewPanel.img }}" alt="{{ viewPanel.title }}">
+        <div>{{ viewPanel.title }}</div>
+      </div>
+    </div>
+    <!-- View Panel end -->
+    <!-- Type Panel start -->
+    <h4 class="design__caption">Типы поверхностей</h4>
+    <div class="design__type-panel row justify-content-center">
+      <div class="design__type-panel__item" *ngFor="let typePanel of typesPanels">
+        <img class="design__type-panel__item-img" src="{{ typePanel.img }}" alt="{{ typePanel.title }}">
+        <div>{{ typePanel.title }}</div>
+      </div>
+    </div>
+    <!-- Type Panel end -->
+    <!-- Color Panel Ral start -->
+    <h4 class="design__caption">Цвет панелей по RAL карте</h4>
+    <div class="design__color-ral-panel row justify-content-center">
+      <div class="design__color-ral-panel__item" *ngFor="let colorPanelRal of colorsPanelsRal">
+        <img class="design__color-ral-panel__item-img" src="{{ colorPanelRal.img }}" alt="{{ colorPanelRal.title }}">
+        <div class="design__color-ral-panel__item-description">{{ colorPanelRal.title }}</div>
+      </div>
+    </div>
+    <!-- Color Panel Ral end -->
+  </div>
+  <!-- Design end -->
+  <!-- Acsessuar vorot start -->
+  <div class="acsessuars">
+    <h3 class="acsessuars__title title__after">Аксессуары</h3>
+    <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
+      <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
+      <p class="acsessuars__item-description col-xl-9 col-md-8">
+        <b>{{ acsessuar.title }}</b>
+        <br>{{ acsessuar.description }}</p>
     </div>
   </div>
-  <!-- View Panel end -->
-  <!-- Type Panel start -->
-  <h4 class="design__caption">Типы поверхностей</h4>
-  <div class="design__type-panel row justify-content-center">
-    <div class="design__type-panel__item" *ngFor="let typePanel of typesPanels">
-      <img class="design__type-panel__item-img" src="{{ typePanel.img }}" alt="{{ typePanel.title }}">
-      <div>{{ typePanel.title }}</div>
+  <!-- Acsessuar vorot end -->
+  <!-- Characteristics start -->
+  <div class="characteristics">
+    <h3 class="characteristics__title title__after">Таблица размеров</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Параметр</th>
+          <th>Показатель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of size">
+          <td>{{ item.parametr }}</td>
+          <td>{{ item.index }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Characteristics end -->
+  <!-- Constructuin start -->
+  <div class="constuction">
+    <h3 class="constuction__title title__after">Конструкция</h3>
+    <img class="constuction__img" src="../../../../assets/img/catalog/section/poster//construction-panorama.jpg" alt="Конструкция"
+      title="Конструкция">
+    <div class="constuction__description">
+      <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
     </div>
   </div>
-  <!-- Type Panel end -->
-  <!-- Color Panel Ral start -->
-  <h4 class="design__caption">Цвет панелей по RAL карте</h4>
-  <div class="design__color-ral-panel row justify-content-center">
-    <div class="design__color-ral-panel__item" *ngFor="let colorPanelRal of colorsPanelsRal">
-      <img class="design__color-ral-panel__item-img" src="{{ colorPanelRal.img }}" alt="{{ colorPanelRal.title }}">
-      <div class="design__color-ral-panel__item-description">{{ colorPanelRal.title }}</div>
-    </div>
-  </div>
-  <!-- Color Panel Ral end -->
+  <!-- Constructuin end -->
 </div>
-<!-- Design end -->
-<!-- Acsessuar vorot start -->
-<div class="acsessuars">
-  <h3 class="acsessuars__title title__after">Аксессуары</h3>
-  <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
-    <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
-    <p class="acsessuars__item-description col-xl-9 col-md-8">
-      <b>{{ acsessuar.title }}</b>
-      <br>{{ acsessuar.description }}</p>
-  </div>
-</div>
-<!-- Acsessuar vorot end -->
-<!-- Characteristics start -->
-<div class="characteristics">
-  <h3 class="characteristics__title title__after">Таблица размеров</h3>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Параметр</th>
-        <th>Показатель</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of size">
-        <td>{{ item.parametr }}</td>
-        <td>{{ item.index }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<!-- Characteristics end -->
-<!-- Constructuin start -->
-<div class="constuction">
-  <h3 class="constuction__title title__after">Конструкция</h3>
-  <img class="constuction__img" src="../../../../assets/img/catalog/section/poster//construction-panorama.jpg" alt="Конструкция"
-    title="Конструкция">
-  <div class="constuction__description">
-    <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
-  </div>
-</div>
-<!-- Constructuin end -->

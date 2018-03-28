@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 
+import { CarouselModule } from 'ngx-bootstrap';
+
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { CatalogModule } from './catalog/catalog.module';
@@ -32,15 +34,22 @@ import { SlidingModule  } from './catalog/avtomatica/sliding/sliding.module';
 import { SwingModule } from './catalog/avtomatica/swing/swing.module';
 
 import { AluminiumModule } from './catalog/rollet/aluminium/aluminium.module';
+import { HomeComponent } from './home/home.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { CaruselComponent } from './home/carusel/carusel.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent
+    ContactComponent,
+    HomeComponent,
+    GalleryComponent,
+    CaruselComponent,
   ],
   imports: [
+    CarouselModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     CatalogModule,

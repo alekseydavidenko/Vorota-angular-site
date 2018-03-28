@@ -1,96 +1,92 @@
-<!-- Product main start -->
-<div class="product">
-  <h2 class="product__title title__after">С пружинами растяжения стандартных размеров</h2>
-  <p class="product__description">
-    Секционные ворота стандартных размеров обладают конструктивными особенностями серии RSD01.
-    Ворота изготавливаются в 10 комплектах, которые всегда есть в наличии на склае производителя.
-    Балансировочный механизм полотна рассчитан на 25 000 рабочих циклов.
-    Комплекты предназначены для самостоятельной установки, просты и удобны как в монтаже, так и в эксплуатации.
-  </p>
-  <img class="product__img"
-    src="../../../../assets/img/catalog/section/poster/poster-standart.jpg"
-    alt="С пружинами растяжения стандартных размеров"
-    title="С пружинами растяжения стандартных размеров">
-</div>
-<!-- Product main end -->
-<!-- Design start -->
-<div class="design">
-  <h3 class="design__title title__after">Дизайн</h3>
-  <!-- View Panel start -->
-  <h4 class="design__caption">Виды Панелей</h4>
-  <div class="design__view-panel row justify-content-center">
-    <div class="design__view-panel__item" *ngFor="let viewPanel of viewsPanels">
-      <img class="design__view-panel__item-img" src="{{ viewPanel.img }}" alt="{{ viewPanel.title }}">
-      <div>{{ viewPanel.title }}</div>
+<div class="container">
+  <!-- Product main start -->
+  <div class="product">
+    <h2 class="product__title title__after">С пружинами растяжения стандартных размеров</h2>
+    <p class="product__description">
+      Секционные ворота стандартных размеров обладают конструктивными особенностями серии RSD01. Ворота изготавливаются в 10 комплектах,
+      которые всегда есть в наличии на склае производителя. Балансировочный механизм полотна рассчитан на 25 000 рабочих
+      циклов. Комплекты предназначены для самостоятельной установки, просты и удобны как в монтаже, так и в эксплуатации.
+    </p>
+    <img class="product__img" src="../../../../assets/img/catalog/section/poster/poster-standart.jpg" alt="С пружинами растяжения стандартных размеров"
+      title="С пружинами растяжения стандартных размеров">
+  </div>
+  <!-- Product main end -->
+  <!-- Design start -->
+  <div class="design">
+    <h3 class="design__title title__after">Дизайн</h3>
+    <!-- View Panel start -->
+    <h4 class="design__caption">Виды Панелей</h4>
+    <div class="design__view-panel row justify-content-center">
+      <div class="design__view-panel__item" *ngFor="let viewPanel of viewsPanels">
+        <img class="design__view-panel__item-img" src="{{ viewPanel.img }}" alt="{{ viewPanel.title }}">
+        <div>{{ viewPanel.title }}</div>
+      </div>
+    </div>
+    <!-- Type Panel start -->
+    <h4 class="design__caption">Типы поверхностей</h4>
+    <div class="design__type-panel row justify-content-center">
+      <div class="design__type-panel__item" *ngFor="let typePanel of typesPanels">
+        <img class="design__type-panel__item-img" src="{{ typePanel.img }}" alt="{{ typePanel.title }}">
+        <div>{{ typePanel.title }}</div>
+      </div>
+    </div>
+    <!-- Type Panel end -->
+    <!-- Color Panel Wood start -->
+    <h4 class="design__caption">Цвет панелей под дерево</h4>
+    <div class="design__color-wood-panel row justify-content-center">
+      <div class="design__color-wood-panel__item" *ngFor="let colorPanelWood of colorsPanelsWood">
+        <img class="design__color-wood-panel__item-img" src="{{ colorPanelWood.img }}" alt="{{ colorPanelWood.title }}">
+        <div>{{ colorPanelWood.title }}</div>
+      </div>
+    </div>
+    <!-- Color Panel Ral start -->
+    <h4 class="design__caption">Цвет панелей по RAL карте</h4>
+    <div class="design__color-ral-panel row justify-content-center">
+      <div class="design__color-ral-panel__item" *ngFor="let colorPanelRal of colorsPanelsRal">
+        <img class="design__color-ral-panel__item-img" src="{{ colorPanelRal.img }}" alt="{{ colorPanelRal.title }}">
+        <div class="design__color-ral-panel__item-description">{{ colorPanelRal.title }}</div>
+      </div>
+    </div>
+    <!-- Color Panel Ral end -->
+  </div>
+  <!-- Design end -->
+  <!-- Acsessuar vorot start -->
+  <div class="acsessuars">
+    <h3 class="acsessuars__title title__after">Аксессуары</h3>
+    <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
+      <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
+      <p class="acsessuars__item-description col-xl-9 col-md-8">
+        <b>{{ acsessuar.title }}</b>
+        <br>{{ acsessuar.description }}</p>
     </div>
   </div>
-  <!-- Type Panel start -->
-  <h4 class="design__caption">Типы поверхностей</h4>
-  <div class="design__type-panel row justify-content-center">
-    <div class="design__type-panel__item" *ngFor="let typePanel of typesPanels">
-      <img class="design__type-panel__item-img"
-        src="{{ typePanel.img }}"
-        alt="{{ typePanel.title }}">
-      <div>{{ typePanel.title }}</div>
-    </div>
-  </div>
-  <!-- Type Panel end -->
-  <!-- Color Panel Wood start -->
-  <h4 class="design__caption">Цвет панелей под дерево</h4>
-  <div class="design__color-wood-panel row justify-content-center">
-    <div class="design__color-wood-panel__item" *ngFor="let colorPanelWood of colorsPanelsWood">
-      <img class="design__color-wood-panel__item-img" src="{{ colorPanelWood.img }}" alt="{{ colorPanelWood.title }}">
-      <div>{{ colorPanelWood.title }}</div>
-    </div>
-  </div>
-  <!-- Color Panel Ral start -->
-  <h4 class="design__caption">Цвет панелей по RAL карте</h4>
-  <div class="design__color-ral-panel row justify-content-center">
-    <div class="design__color-ral-panel__item" *ngFor="let colorPanelRal of colorsPanelsRal">
-      <img class="design__color-ral-panel__item-img" src="{{ colorPanelRal.img }}" alt="{{ colorPanelRal.title }}">
-      <div class="design__color-ral-panel__item-description">{{ colorPanelRal.title }}</div>
-    </div>
-  </div>
-  <!-- Color Panel Ral end -->
-</div>
-<!-- Design end -->
-<!-- Acsessuar vorot start -->
-<div class="acsessuars">
-  <h3 class="acsessuars__title title__after">Аксессуары</h3>
-  <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
-    <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9"
-      src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
-    <p class="acsessuars__item-description col-xl-9 col-md-8"><b>{{ acsessuar.title }}</b><br>{{ acsessuar.description }}</p>
-  </div>
-</div>
-<!-- Acsessuar vorot end -->
-<!-- Characteristics start -->
-<div class="characteristics">
-  <h3 class="characteristics__title title__after">Таблица размеров</h3>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Параметр</th>
-        <th>Показатель</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of size">
-        <td>{{ item.parametr }}</td>
-        <td>{{ item.index }}</td>
-      </tr>
-    </tbody>
+  <!-- Acsessuar vorot end -->
+  <!-- Characteristics start -->
+  <div class="characteristics">
+    <h3 class="characteristics__title title__after">Таблица размеров</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Параметр</th>
+          <th>Показатель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of size">
+          <td>{{ item.parametr }}</td>
+          <td>{{ item.index }}</td>
+        </tr>
+      </tbody>
     </table>
-</div>
-<!-- Characteristics end -->
-<!-- Constructuin start -->
-<div class="constuction">
-  <h3 class="constuction__title title__after">Конструкция</h3>
-  <img class="constuction__img"
-    src="../../../../assets/img/catalog/section/poster/construction-standart.jpg"
-    alt="Конструкция">
-  <div class="constuction__description" >
-    <p *ngFor="let construction of constructions; let i = index">{{ i + 1}}. {{ construction.name }}</p>
   </div>
+  <!-- Characteristics end -->
+  <!-- Constructuin start -->
+  <div class="constuction">
+    <h3 class="constuction__title title__after">Конструкция</h3>
+    <img class="constuction__img" src="../../../../assets/img/catalog/section/poster/construction-standart.jpg" alt="Конструкция">
+    <div class="constuction__description">
+      <p *ngFor="let construction of constructions; let i = index">{{ i + 1}}. {{ construction.name }}</p>
+    </div>
+  </div>
+  <!-- Constructuin end -->
 </div>
-<!-- Constructuin end -->

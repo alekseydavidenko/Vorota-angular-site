@@ -4,13 +4,15 @@
         <h1 class="header__logo">Ворота</h1>
         <nav>
           <ul class="header__items">
+            <li class="header__item"><a class="header__item-link" href="#" routerLink="/home" routerLinkActive="active">Главная</a></li>
             <li class="header__item"><a class="header__item-link" href="#" routerLink="/catalog" routerLinkActive="active">Каталог</a></li>
+            <li class="header__item"><a class="header__item-link" href="#" routerLink="/gallery" routerLinkActive="active">Галерея</a></li>
             <li class="header__item"><a class="header__item-link" href="#" routerLink="/contact" routerLinkActive="active">Контакты</a></li>
           </ul>
         </nav>
       </header>
   </section>
-  <section class="container content">
+  <section class="content">
     <router-outlet></router-outlet>
   </section>
 </div>

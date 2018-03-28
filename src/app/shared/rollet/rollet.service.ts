@@ -166,22 +166,22 @@ export class RolletService {
       'GC2 для управления двумя приводами с одного выключателя; блок GC4 — для управления четырьмя приводами',
     ),
     dhre1: new AcsessuarRollet(
-      '../../../assets/img/catalog/avtomatica/acsessuars/dhre-1.jpg',
+      '../../../assets/img/catalog/rollet/acsessuars/dhre-1.jpg',
       'Приемник DHRE-1 внешний одноканальный',
       'предназначен для управления автоматикой компании DoorHan или других производителей при помощи пультов DoorHan.',
     ),
     smartcontrol2: new AcsessuarRollet(
-      '../../../assets/img/catalog/avtomatica/acsessuars/wifi-smartcontrol-2.jpg',
+      '../../../assets/img/catalog/rollet/acsessuars/wifi-smartcontrol-2.jpg',
       'Приемник WIFI SMARTCONTROL-2',
       'предназначен для беспроводного управления (выработки сигнала управления"NO") электроприводами.',
     ),
     gsm2: new AcsessuarRollet(
-      '../../../assets/img/catalog/avtomatica/acsessuars/gsm-2.jpg',
+      '../../../assets/img/catalog/rollet/acsessuars/gsm-2.jpg',
       'Модуль GSM-2.0',
       'редназначен для приема сигнала с мобильного телефона и его преобразования в команду для управления автоматической системой.',
     ),
     t5: new AcsessuarRollet(
-      '../../../assets/img/catalog/rollet/acsessuars/transmitter-2-pro.jpg',
+      '../../../assets/img/catalog/rollet/acsessuars/t-5.jpg',
       'Пульт T5',
       'предназначен для управления 5 роллетами',
     ),

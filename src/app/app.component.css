@@ -3,7 +3,16 @@
   height: auto !important;
   height: 100%;
 }
-.heder__bg,
+.heder__bg {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+.heder__bg {
+  background: rgba(0, 0, 0, .6);
+}
 .footer__bg {
   background-color: #333;
 }
@@ -15,8 +24,8 @@
   height: 50px;
 }
 .content {
-  margin: 30px auto 0;
-  padding-bottom: 80px;
+  margin: 0 auto 0;
+  padding: 70px 0 80px;
 }
 .footer {
   color: #fff;

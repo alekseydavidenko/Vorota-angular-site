@@ -1,51 +1,53 @@
-<!-- Product main start -->
-<div class="product">
-  <h2 class="product__title title__after">Привод ARM-320 для распашных ворот</h2>
-  <p class="product__description">
-    Электромеханический привод ARM-320 предназначен для автоматизации распашных ворот.
-  </p>
-  <img class="product__img" src="../../../../../assets/img/catalog/avtomatica/swing/poster-arm-320.jpg" alt="Привод ARM-320">
-</div>
-<!-- Product main end -->
-<!-- Specification start -->
-<div class="characteristics">
-  <h3 class="characteristics__title title__after">Технические характеристики</h3>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Параметр</th>
-        <th>Значение</th>
-        <th *ngIf="specification">Примечание</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of specifications">
-        <td>{{ item.parametr }}</td>
-        <td>{{ item.index }}</td>
-        <td *ngIf="specification">{{ item.note }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<!-- Specification end -->
-<!-- Constructuin start -->
-<div class="constuction">
-  <h3 class="constuction__title title__after">Конструкция</h3>
-  <img class="constuction__img" src="../../../../../assets/img/catalog/avtomatica/swing/construction-arm-320.jpg" alt="Конструкция"
-    title="Конструкция">
-  <div class="constuction__description">
-    <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
+<div class="container">
+  <!-- Product main start -->
+  <div class="product">
+    <h2 class="product__title title__after">Привод ARM-320 для распашных ворот</h2>
+    <p class="product__description">
+      Электромеханический привод ARM-320 предназначен для автоматизации распашных ворот.
+    </p>
+    <img class="product__img" src="../../../../../assets/img/catalog/avtomatica/swing/poster-arm-320.jpg" alt="Привод ARM-320">
   </div>
-</div>
-<!-- Constructuin end -->
-<!-- Acsessuar vorot start -->
-<div class="acsessuars">
-  <h3 class="acsessuars__title title__after">Аксессуары</h3>
-  <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
-    <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
-    <p class="acsessuars__item-description col-xl-9 col-md-8">
-      <b>{{ acsessuar.title }}</b>
-      <br>{{ acsessuar.description }}</p>
+  <!-- Product main end -->
+  <!-- Specification start -->
+  <div class="characteristics">
+    <h3 class="characteristics__title title__after">Технические характеристики</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Параметр</th>
+          <th>Значение</th>
+          <th *ngIf="specification">Примечание</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of specifications">
+          <td>{{ item.parametr }}</td>
+          <td>{{ item.index }}</td>
+          <td *ngIf="specification">{{ item.note }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+  <!-- Specification end -->
+  <!-- Constructuin start -->
+  <div class="constuction">
+    <h3 class="constuction__title title__after">Конструкция</h3>
+    <img class="constuction__img" src="../../../../../assets/img/catalog/avtomatica/swing/construction-arm-320.jpg" alt="Конструкция"
+      title="Конструкция">
+    <div class="constuction__description">
+      <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
+    </div>
+  </div>
+  <!-- Constructuin end -->
+  <!-- Acsessuar vorot start -->
+  <div class="acsessuars">
+    <h3 class="acsessuars__title title__after">Аксессуары</h3>
+    <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
+      <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
+      <p class="acsessuars__item-description col-xl-9 col-md-8">
+        <b>{{ acsessuar.title }}</b>
+        <br>{{ acsessuar.description }}</p>
+    </div>
+  </div>
+  <!-- Acsessuar vorot end -->
 </div>
-<!-- Acsessuar vorot end -->

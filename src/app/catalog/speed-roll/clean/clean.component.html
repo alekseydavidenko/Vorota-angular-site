@@ -1,63 +1,63 @@
-<!-- Product main start -->
-<div class="product">
-  <h2 class="product__title title__after">Скоростные рулонные ворота для чистых помещений серии SPEEDROLL SDCL</h2>
-  <p class="product__description">
-    Скоростные рулонные ворота предназначены для изоляции и сохранения микроклимата помещений на объектах промышленного,
-    складского, торгового и другого назначения.</p>
-  <img class="product__img" src="../../../../assets/img/catalog/speed-roll/posters/poster-clean.jpg" alt="SPEEDROLL SDCL">
-</div>
-<!-- Product main end -->
-<!-- Design start -->
-<div class="design">
-  <h3 class="design__title title__after">Дизайн</h3>
-  <!-- Type start -->
-  <h4 class="design__caption">Типы поверхностей</h4>
-  <div class="design__type-panel row justify-content-center">
-    <div class="design__type-panel__item" *ngFor="let type of types">
-      <img class="design__type-panel__item-img" src="{{ type.img }}" alt="{{ type.title }}">
-      <div>{{ type.title }}</div>
+<div class="container">
+  <!-- Product main start -->
+  <div class="product">
+    <h2 class="product__title title__after">Скоростные рулонные ворота для чистых помещений серии SPEEDROLL SDCL</h2>
+    <p class="product__description">
+      Скоростные рулонные ворота предназначены для изоляции и сохранения микроклимата помещений на объектах промышленного, складского,
+      торгового и другого назначения.</p>
+    <img class="product__img" src="../../../../assets/img/catalog/speed-roll/posters/poster-clean.jpg" alt="SPEEDROLL SDCL">
+  </div>
+  <!-- Product main end -->
+  <!-- Design start -->
+  <div class="design">
+    <h3 class="design__title title__after">Дизайн</h3>
+    <!-- Type start -->
+    <h4 class="design__caption">Типы поверхностей</h4>
+    <div class="design__type-panel row justify-content-center">
+      <div class="design__type-panel__item" *ngFor="let type of types">
+        <img class="design__type-panel__item-img" src="{{ type.img }}" alt="{{ type.title }}">
+        <div>{{ type.title }}</div>
+      </div>
+    </div>
+    <!-- Type end -->
+    <!-- Color start -->
+    <h4 class="design__caption">Цвет каркаса / полотна</h4>
+    <div class="design__color-wood-panel row justify-content-center">
+      <div class="design__color-wood-panel__item" *ngFor="let color of colors">
+        <img class="design__color-wood-panel__item-img" src="{{ color.img }}" alt="{{ color.title }}">
+        <div>{{ color.title }}</div>
+      </div>
+    </div>
+    <!-- Color end -->
+  </div>
+  <!-- Design end -->
+  <!-- Characteristics start -->
+  <div class="characteristics">
+    <h3 class="characteristics__title title__after">Таблица размеров</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Параметр</th>
+          <th>Показатель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of size">
+          <td>{{ item.parametr }}</td>
+          <td>{{ item.index }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Characteristics end -->
+  <!-- Constructuin start -->
+  <div class="constuction">
+    <h3 class="constuction__title title__after">Конструкция</h3>
+    <img class="constuction__img" src="../../../../assets/img/catalog/speed-roll/posters/construction-clean.jpg" alt="Конструкция"
+      title="Конструкция">
+    <div class="constuction__description">
+      <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
     </div>
   </div>
-  <!-- Type end -->
-  <!-- Color start -->
-  <h4 class="design__caption">Цвет каркаса / полотна</h4>
-  <div class="design__color-wood-panel row justify-content-center">
-    <div class="design__color-wood-panel__item" *ngFor="let color of colors">
-      <img class="design__color-wood-panel__item-img" src="{{ color.img }}" alt="{{ color.title }}">
-      <div>{{ color.title }}</div>
-    </div>
-  </div>
-  <!-- Color end -->
+  <!-- Constructuin end -->
 </div>
-<!-- Design end -->
-<!-- Characteristics start -->
-<div class="characteristics">
-  <h3 class="characteristics__title title__after">Таблица размеров</h3>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Параметр</th>
-        <th>Показатель</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of size">
-        <td>{{ item.parametr }}</td>
-        <td>{{ item.index }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<!-- Characteristics end -->
-<!-- Constructuin start -->
-<div class="constuction">
-  <h3 class="constuction__title title__after">Конструкция</h3>
-  <img class="constuction__img" src="../../../../assets/img/catalog/speed-roll/posters/construction-clean.jpg" alt="Конструкция"
-    title="Конструкция">
-  <div class="constuction__description">
-    <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
-  </div>
-</div>
-<!-- Constructuin end -->
-
-

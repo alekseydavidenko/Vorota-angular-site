@@ -1,29 +1,31 @@
-<div *ngFor="let acsessuar of acsessuars">
-  <div class="product">
-    <h2 class="product__title title__after">{{acsessuar.title}}</h2>
-    <div class="acsessuars__item row">
-      <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
-      <p class="acsessuars__item-description col-xl-9 col-md-8">
-        <b>{{ acsessuar.title }}</b>
-        <br>{{ acsessuar.description }}
-      </p>
-    </div>
-    <div class="characteristics">
-      <h3 class="characteristics__title">Технические характеристики</h3>
-      <table class="table table-striped table-sm">
-        <thead>
-          <tr>
-            <th>Параметр</th>
-            <th>Значение</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let item of acsessuar.specification">
-            <td>{{ item.parametr }}</td>
-            <td>{{ item.index }}</td>
-          </tr>
-        </tbody>
-      </table>
+<div class="container">
+  <div *ngFor="let acsessuar of acsessuars">
+    <div class="product">
+      <h2 class="product__title title__after">{{acsessuar.title}}</h2>
+      <div class="acsessuars__item row">
+        <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
+        <p class="acsessuars__item-description col-xl-9 col-md-8">
+          <b>{{ acsessuar.title }}</b>
+          <br>{{ acsessuar.description }}
+        </p>
+      </div>
+      <div class="characteristics">
+        <h3 class="characteristics__title">Технические характеристики</h3>
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>Параметр</th>
+              <th>Значение</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of acsessuar.specification">
+              <td>{{ item.parametr }}</td>
+              <td>{{ item.index }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </div>

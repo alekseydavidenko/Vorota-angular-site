@@ -1,0 +1,36 @@
+.carusel {
+  margin-top: -70px;
+}
+.carusel-img {
+  width: 100%;
+  height: max-content;
+  object-fit: cover;
+}
+.carousel-caption {
+  width: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .6);
+}
+.carousel-caption-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.carousel-caption-link {
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+.carousel-caption-link:hover {
+  text-decoration: underline;
+}
+.carousel-caption-link::after {
+  content: '/';
+  position: absolute;
+  margin-left: 10px;;
+}
+.carousel-caption-link:last-child::after {
+  display: none;
+}

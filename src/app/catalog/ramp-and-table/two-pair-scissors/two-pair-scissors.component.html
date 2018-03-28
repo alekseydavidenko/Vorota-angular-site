@@ -1,69 +1,71 @@
-<!-- Product main start -->
-<div class="product">
-  <h2 class="product__title title__after">Стол подъемный с двумя парами ножниц серии 2LT</h2>
-  <p class="product__description">
-    Современные гидравлические подъемные столы применяются в различных сферах деятельности как промышленной, так и бытовой, обеспечивая
-    подъем и опускание грузов на различные уровни. Использование подъемных столов позволяет выполнять вертикальные перегрузочные
-    операции максимально быстро. Подъемные столы надежны в эксплуатации и просты в техническом обслуживании. Подъемный стол
-    представляет собой фиксированное подъемное устройство, предназначенное для перемещения предметов при организации грузового
-    сообщения между разными уровнями помещений. Подъемные столы могут использоваться для подъема/опускания автомобилей на
-    стоянках, на производственных линиях для подачи материалов на уровень подающих устройств, а также в качестве альтернативы
-    грузовому лифту в помещении или стационарной рампе для погрузки/разгрузки грузовых машин.
-  </p>
-  <img class="product__img" src="../../../../assets/img/catalog/ramp-and-table/posters/poster-two-pair-scissors.jpg" alt="Стол подъемный 2LT">
-</div>
-<!-- Product main end -->
-<!-- Design start -->
-<div class="design">
-  <h3 class="design__title title__after">Дизайн</h3>
-  <!-- Color start -->
-  <h4 class="design__caption">Цвет</h4>
-  <div class="design__color-wood-panel row justify-content-center">
-    <div class="design__color-wood-panel__item" *ngFor="let color of colors">
-      <img class="design__color-wood-panel__item-img" src="{{ color.img }}" alt="{{ color.title }}">
-      <div>{{ color.title }}</div>
+<div class="container">
+  <!-- Product main start -->
+  <div class="product">
+    <h2 class="product__title title__after">Стол подъемный с двумя парами ножниц серии 2LT</h2>
+    <p class="product__description">
+      Современные гидравлические подъемные столы применяются в различных сферах деятельности как промышленной, так и бытовой, обеспечивая
+      подъем и опускание грузов на различные уровни. Использование подъемных столов позволяет выполнять вертикальные перегрузочные
+      операции максимально быстро. Подъемные столы надежны в эксплуатации и просты в техническом обслуживании. Подъемный
+      стол представляет собой фиксированное подъемное устройство, предназначенное для перемещения предметов при организации
+      грузового сообщения между разными уровнями помещений. Подъемные столы могут использоваться для подъема/опускания автомобилей
+      на стоянках, на производственных линиях для подачи материалов на уровень подающих устройств, а также в качестве альтернативы
+      грузовому лифту в помещении или стационарной рампе для погрузки/разгрузки грузовых машин.
+    </p>
+    <img class="product__img" src="../../../../assets/img/catalog/ramp-and-table/posters/poster-two-pair-scissors.jpg" alt="Стол подъемный 2LT">
+  </div>
+  <!-- Product main end -->
+  <!-- Design start -->
+  <div class="design">
+    <h3 class="design__title title__after">Дизайн</h3>
+    <!-- Color start -->
+    <h4 class="design__caption">Цвет</h4>
+    <div class="design__color-wood-panel row justify-content-center">
+      <div class="design__color-wood-panel__item" *ngFor="let color of colors">
+        <img class="design__color-wood-panel__item-img" src="{{ color.img }}" alt="{{ color.title }}">
+        <div>{{ color.title }}</div>
+      </div>
+    </div>
+    <!-- Color end -->
+  </div>
+  <!-- Design end -->
+  <!-- Acsessuar vorot start -->
+  <div class="acsessuars">
+    <h3 class="acsessuars__title title__after">Дополнительная коммплектация</h3>
+    <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
+      <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
+      <p class="acsessuars__item-description col-xl-9 col-md-8">
+        <b>{{ acsessuar.title }}</b>
+        <br>{{ acsessuar.description }}</p>
     </div>
   </div>
-  <!-- Color end -->
-</div>
-<!-- Design end -->
-<!-- Acsessuar vorot start -->
-<div class="acsessuars">
-  <h3 class="acsessuars__title title__after">Дополнительная коммплектация</h3>
-  <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
-    <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
-    <p class="acsessuars__item-description col-xl-9 col-md-8">
-      <b>{{ acsessuar.title }}</b>
-      <br>{{ acsessuar.description }}</p>
+  <!-- Acsessuar vorot end -->
+  <!-- Characteristics start -->
+  <div class="characteristics">
+    <h3 class="characteristics__title title__after">Таблица размеров</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Параметр</th>
+          <th>Показатель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of size">
+          <td>{{ item.parametr }}</td>
+          <td>{{ item.index }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-</div>
-<!-- Acsessuar vorot end -->
-<!-- Characteristics start -->
-<div class="characteristics">
-  <h3 class="characteristics__title title__after">Таблица размеров</h3>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Параметр</th>
-        <th>Показатель</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of size">
-        <td>{{ item.parametr }}</td>
-        <td>{{ item.index }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<!-- Characteristics end -->
-<!-- Constructuin start -->
-<div class="constuction">
-  <h3 class="constuction__title title__after">Конструкция</h3>
-  <img class="constuction__img" src="../../../../assets/img/catalog/ramp-and-table/posters/construction-two-pair-scissors.jpg"
-    alt="Конструкция" title="Конструкция">
-  <div class="constuction__description">
-    <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
+  <!-- Characteristics end -->
+  <!-- Constructuin start -->
+  <div class="constuction">
+    <h3 class="constuction__title title__after">Конструкция</h3>
+    <img class="constuction__img" src="../../../../assets/img/catalog/ramp-and-table/posters/construction-two-pair-scissors.jpg"
+      alt="Конструкция" title="Конструкция">
+    <div class="constuction__description">
+      <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
+    </div>
   </div>
+  <!-- Constructuin end -->
 </div>
-<!-- Constructuin end -->

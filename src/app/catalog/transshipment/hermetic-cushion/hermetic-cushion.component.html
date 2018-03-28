@@ -1,53 +1,56 @@
-<!-- Product main start -->
-<div class="product">
-  <h2 class="product__title title__after">Герметизатор подушечный серии DSHINP</h2>
-  <p class="product__description">
-    Герметизатор подушечного типа серии DSHINP является самым бюджетным вариантом для использования с парком небольших автомобилей
-    примерно одинакового размера, имеющих прочный кузов. При проведении погрузочно-разгрузочных работ автомобиль подъезжает к герметизатору
-    с предварительно открытыми дверями, вдавливая подушки примерно на 50 мм, благодаря чему образуется уплотнение с трех сторон кузова автомобиля.
-    Материал ПВХ, из которого изготовлены чехлы подушек обладает достаточной эластичностью, износостойкостью и имеет высокое сопротивление на разрыв.
-    Установка герметизатора осуществляется накладным способом.
-  </p>
-  <img class="product__img" src="../../../../assets/img/catalog/transshipment/posters/poster-hermetic-cushion.jpg" alt="Герметизатор DSHINP">
-</div>
-<!-- Product main end -->
-<!-- Acsessuar vorot start -->
-<div class="acsessuars">
-  <h3 class="acsessuars__title title__after">Аксессуары</h3>
-  <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
-    <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
-    <p class="acsessuars__item-description col-xl-9 col-md-8">
-      <b>{{ acsessuar.title }}</b>
-      <br>{{ acsessuar.description }}</p>
+<div class="container">
+  <!-- Product main start -->
+  <div class="product">
+    <h2 class="product__title title__after">Герметизатор подушечный серии DSHINP</h2>
+    <p class="product__description">
+      Герметизатор подушечного типа серии DSHINP является самым бюджетным вариантом для использования с парком небольших автомобилей
+      примерно одинакового размера, имеющих прочный кузов. При проведении погрузочно-разгрузочных работ автомобиль подъезжает
+      к герметизатору с предварительно открытыми дверями, вдавливая подушки примерно на 50 мм, благодаря чему образуется
+      уплотнение с трех сторон кузова автомобиля. Материал ПВХ, из которого изготовлены чехлы подушек обладает достаточной
+      эластичностью, износостойкостью и имеет высокое сопротивление на разрыв. Установка герметизатора осуществляется накладным
+      способом.
+    </p>
+    <img class="product__img" src="../../../../assets/img/catalog/transshipment/posters/poster-hermetic-cushion.jpg" alt="Герметизатор DSHINP">
   </div>
-</div>
-<!-- Acsessuar vorot end -->
-<!-- Characteristics start -->
-<div class="characteristics">
-  <h3 class="characteristics__title title__after">Таблица размеров</h3>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Параметр</th>
-        <th>Показатель</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of size">
-        <td>{{ item.parametr }}</td>
-        <td>{{ item.index }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<!-- Characteristics end -->
-<!-- Constructuin start -->
-<div class="constuction">
-  <h3 class="constuction__title title__after">Конструкция</h3>
-  <img class="constuction__img" src="../../../../assets/img/catalog//transshipment/posters/construction-hermetic-cushion.jpg" alt="Конструкция"
-    title="Конструкция">
-  <div class="constuction__description">
-    <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
+  <!-- Product main end -->
+  <!-- Acsessuar vorot start -->
+  <div class="acsessuars">
+    <h3 class="acsessuars__title title__after">Аксессуары</h3>
+    <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
+      <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
+      <p class="acsessuars__item-description col-xl-9 col-md-8">
+        <b>{{ acsessuar.title }}</b>
+        <br>{{ acsessuar.description }}</p>
+    </div>
   </div>
+  <!-- Acsessuar vorot end -->
+  <!-- Characteristics start -->
+  <div class="characteristics">
+    <h3 class="characteristics__title title__after">Таблица размеров</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Параметр</th>
+          <th>Показатель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of size">
+          <td>{{ item.parametr }}</td>
+          <td>{{ item.index }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Characteristics end -->
+  <!-- Constructuin start -->
+  <div class="constuction">
+    <h3 class="constuction__title title__after">Конструкция</h3>
+    <img class="constuction__img" src="../../../../assets/img/catalog//transshipment/posters/construction-hermetic-cushion.jpg"
+      alt="Конструкция" title="Конструкция">
+    <div class="constuction__description">
+      <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
+    </div>
+  </div>
+  <!-- Constructuin end -->
 </div>
-<!-- Constructuin end -->

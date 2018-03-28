@@ -1,86 +1,88 @@
-<!-- Product main start -->
-<div class="product">
-  <h2 class="product__title title__after">Стальные рулонные ворота с внутривальным электроприводом из профиля RHS75, RHS75P, RHS117/0.8, RHS117P/0.8</h2>
-  <p class="product__description">
-    Компания DoorHan предлагает рулонные ворота, которые соответствуют европейским нормам качества и безопасности,
-    а также адаптированы для эксплуатации в различных климатических условиях. Рулонные ворота с внутривальным приводом устанавливаются на въездные
-    и гаражные проемы, торговые комплексы, складские и промышленные объекты площадью до 20.5 м.кв.
-    Все комплектующие для рулонных ворот DoorHan выпускаются на современных автоматизированных линиях с применением оборудования ведущих мировых производителей.
-    Все металлические детали оцинкованы или окрашены, что обеспечивает устойчивость к коррозии и негативному воздействию агрессивных сред,
-    продлевает срок службы рольставен. Надежность конструкции рулонных ворот DoorHan, безопасность их эксплуатации
-    и соответствие европейским стандартам подтверждены сертификатами.</p>
-  <img class="product__img" src="../../../../assets/img/catalog/rollet/posters/poster-rhs-75.jpg" alt="RHS75, RHS75P, RHS117/0.8, RHS117P/0.8">
-</div>
-<!-- Product main end -->
-<!-- Design start -->
-<div class="design">
-  <h3 class="design__title title__after">Дизайн</h3>
-  <!-- View Lamel start -->
-  <h4 class="design__caption">Виды Ламелей</h4>
-  <div class="design__view-panel row justify-content-center">
-    <div class="design__view-panel__item" *ngFor="let viewLamel of viewLamels">
-      <img class="design__view-panel__item-img" src="{{ viewLamel.img }}" alt="{{ viewLamel.title }}">
-      <div>{{ viewLamel.title }}</div>
+<div class="container">
+  <!-- Product main start -->
+  <div class="product">
+    <h2 class="product__title title__after">Стальные рулонные ворота с внутривальным электроприводом из профиля RHS75, RHS75P, RHS117/0.8, RHS117P/0.8</h2>
+    <p class="product__description">
+      Компания DoorHan предлагает рулонные ворота, которые соответствуют европейским нормам качества и безопасности, а также адаптированы
+      для эксплуатации в различных климатических условиях. Рулонные ворота с внутривальным приводом устанавливаются на въездные
+      и гаражные проемы, торговые комплексы, складские и промышленные объекты площадью до 20.5 м.кв. Все комплектующие для
+      рулонных ворот DoorHan выпускаются на современных автоматизированных линиях с применением оборудования ведущих мировых
+      производителей. Все металлические детали оцинкованы или окрашены, что обеспечивает устойчивость к коррозии и негативному
+      воздействию агрессивных сред, продлевает срок службы рольставен. Надежность конструкции рулонных ворот DoorHan, безопасность
+      их эксплуатации и соответствие европейским стандартам подтверждены сертификатами.</p>
+    <img class="product__img" src="../../../../assets/img/catalog/rollet/posters/poster-rhs-75.jpg" alt="RHS75, RHS75P, RHS117/0.8, RHS117P/0.8">
+  </div>
+  <!-- Product main end -->
+  <!-- Design start -->
+  <div class="design">
+    <h3 class="design__title title__after">Дизайн</h3>
+    <!-- View Lamel start -->
+    <h4 class="design__caption">Виды Ламелей</h4>
+    <div class="design__view-panel row justify-content-center">
+      <div class="design__view-panel__item" *ngFor="let viewLamel of viewLamels">
+        <img class="design__view-panel__item-img" src="{{ viewLamel.img }}" alt="{{ viewLamel.title }}">
+        <div>{{ viewLamel.title }}</div>
+      </div>
+    </div>
+    <!-- View Lamel end -->
+    <!-- Color Lamel Ral start -->
+    <h4 class="design__caption">Цвет ламелий стандартный</h4>
+    <div class="design__color-ral-panel row justify-content-center">
+      <div class="design__color-ral-panel__item" *ngFor="let colorLamel of colorLamels">
+        <img class="design__color-ral-panel__item-img" src="{{ colorLamel.img }}" alt="{{ colorLamel.title }}">
+        <div class="design__color-ral-panel__item-description">{{ colorLamel.title }}</div>
+      </div>
+    </div>
+    <!-- Color Lamel Ral end -->
+    <!-- Color Lamel Addditional Ral start -->
+    <h4 class="design__caption">Цвет ламелий дополнительный</h4>
+    <div class="design__color-ral-panel row justify-content-center">
+      <div class="design__color-ral-panel__item" *ngFor="let colorLamelAdditional of colorLamelsAdditional">
+        <img class="design__color-ral-panel__item-img" src="{{ colorLamelAdditional.img }}" alt="{{ colorLamelAdditional.title }}">
+        <div class="design__color-ral-panel__item-description">{{ colorLamelAdditional.title }}</div>
+      </div>
+    </div>
+    <!-- Color Lamel Addditional Ral end -->
+  </div>
+  <!-- Design end -->
+  <!-- Acsessuar vorot start -->
+  <div class="acsessuars">
+    <h3 class="acsessuars__title title__after">Аксессуары</h3>
+    <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
+      <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
+      <p class="acsessuars__item-description col-xl-9 col-md-8">
+        <b>{{ acsessuar.title }}</b>
+        <br>{{ acsessuar.description }}</p>
     </div>
   </div>
-  <!-- View Lamel end -->
-  <!-- Color Lamel Ral start -->
-  <h4 class="design__caption">Цвет ламелий стандартный</h4>
-  <div class="design__color-ral-panel row justify-content-center">
-    <div class="design__color-ral-panel__item" *ngFor="let colorLamel of colorLamels">
-      <img class="design__color-ral-panel__item-img" src="{{ colorLamel.img }}" alt="{{ colorLamel.title }}">
-      <div class="design__color-ral-panel__item-description">{{ colorLamel.title }}</div>
+  <!-- Acsessuar vorot end -->
+  <!-- Characteristics start -->
+  <div class="characteristics">
+    <h3 class="characteristics__title title__after">Таблица размеров</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Параметр</th>
+          <th>Показатель</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of size">
+          <td>{{ item.parametr }}</td>
+          <td>{{ item.index }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Characteristics end -->
+  <!-- Constructuin start -->
+  <div class="constuction">
+    <h3 class="constuction__title title__after">Конструкция</h3>
+    <img class="constuction__img" src="../../../../assets/img/catalog/rollet/posters/construction-rhs-75.jpg" alt="Конструкция"
+      title="Конструкция">
+    <div class="constuction__description">
+      <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
     </div>
   </div>
-  <!-- Color Lamel Ral end -->
-  <!-- Color Lamel Addditional Ral start -->
-  <h4 class="design__caption">Цвет ламелий дополнительный</h4>
-  <div class="design__color-ral-panel row justify-content-center">
-    <div class="design__color-ral-panel__item" *ngFor="let colorLamelAdditional of colorLamelsAdditional">
-      <img class="design__color-ral-panel__item-img" src="{{ colorLamelAdditional.img }}" alt="{{ colorLamelAdditional.title }}">
-      <div class="design__color-ral-panel__item-description">{{ colorLamelAdditional.title }}</div>
-    </div>
-  </div>
-  <!-- Color Lamel Addditional Ral end -->
+  <!-- Constructuin end -->
 </div>
-<!-- Design end -->
-<!-- Acsessuar vorot start -->
-<div class="acsessuars">
-  <h3 class="acsessuars__title title__after">Аксессуары</h3>
-  <div class="acsessuars__item row" *ngFor="let acsessuar of acsessuars">
-    <img class="acsessuars__item-img col-xl-3 col-md-4 col-sm-6 col-9" src="{{ acsessuar.img }}" alt="{{ acsessuar.title }}">
-    <p class="acsessuars__item-description col-xl-9 col-md-8">
-      <b>{{ acsessuar.title }}</b>
-      <br>{{ acsessuar.description }}</p>
-  </div>
-</div>
-<!-- Acsessuar vorot end -->
-<!-- Characteristics start -->
-<div class="characteristics">
-  <h3 class="characteristics__title title__after">Таблица размеров</h3>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Параметр</th>
-        <th>Показатель</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of size">
-        <td>{{ item.parametr }}</td>
-        <td>{{ item.index }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<!-- Characteristics end -->
-<!-- Constructuin start -->
-<div class="constuction">
-  <h3 class="constuction__title title__after">Конструкция</h3>
-  <img class="constuction__img" src="../../../../assets/img/catalog/rollet/posters/construction-rhs-75.jpg" alt="Конструкция"
-    title="Конструкция">
-  <div class="constuction__description">
-    <p *ngFor="let construction of constructions; let i = index">{{ i + 1 }}. {{ construction.name }}</p>
-  </div>
-</div>
-<!-- Constructuin end -->
