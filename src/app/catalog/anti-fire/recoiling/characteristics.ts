@@ -1,4 +1,4 @@
-import { Construction, Size } from '../../../shared/idex';
+import { Construction, Size } from '../../../shared/catalog/idex';
 
 export const CharacteristicSize: Size[] = [
   new Size('Ширина проема, мм', '	2 000 - 7 000 (для одностворчатых ворот)'),

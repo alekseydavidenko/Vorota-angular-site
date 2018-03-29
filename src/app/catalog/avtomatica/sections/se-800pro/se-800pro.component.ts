@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject, forwardRef } from '@angular/core';
 
-import { Size, Construction, Specification } from '../../../../shared/idex';
+import { Size, Construction, Specification } from '../../../../shared/catalog/idex';
 import { Constructions, CharacteristicTechnical } from './characteristics';
 
 import { Product } from '../../../../shared/automatica/product';

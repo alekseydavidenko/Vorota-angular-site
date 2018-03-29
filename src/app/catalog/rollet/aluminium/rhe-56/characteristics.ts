@@ -1,4 +1,4 @@
-import { Construction, Size } from '../../../../shared/idex';
+import { Construction, Size } from '../../../../shared/catalog/idex';
 
 export const CharacteristicSize: Size[] = [
   new Size('Высота проема, мм', '500 - 4 500'),

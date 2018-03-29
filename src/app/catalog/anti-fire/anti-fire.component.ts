@@ -1,8 +1,8 @@
 import { Component, OnInit, Inject, forwardRef } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
-import { CatalogService } from '../../shared/catalog.service';
-import { Catalog } from '../../shared/catalog';
+import { CatalogService } from '../../shared/catalog/catalog.service';
+import { Catalog } from '../../shared/catalog/catalog';
 
 @Component({
   selector: 'app-anti-fire',
@@ -24,6 +24,7 @@ export class AntiFireComponent implements OnInit {
 
   ngOnInit() {
     this.catalogService.getCatalogAntiFire().then(result => this.catalogAntiFire = result);
+    console.log(this.catalogAntiFire);
   }
   onSelect(selected: Catalog) {
     this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });

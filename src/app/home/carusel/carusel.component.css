@@ -12,6 +12,8 @@
   left: 0;
   bottom: 0;
   background: rgba(0, 0, 0, .6);
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .carousel-caption-title {
   font-size: 2rem;
@@ -19,9 +21,11 @@
 }
 .carousel-caption-link {
   color: #fff;
+  text-transform: lowercase;
   margin-left: 10px;
   margin-right: 10px;
   position: relative;
+  display: inline-block;
 }
 .carousel-caption-link:hover {
   text-decoration: underline;

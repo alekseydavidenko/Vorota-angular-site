@@ -1,8 +1,8 @@
 import { Component, OnInit, Inject, forwardRef } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
-import { CatalogService } from '../../shared/catalog.service';
-import { Catalog } from '../../shared/catalog';
+import { CatalogService } from '../../shared/catalog/catalog.service';
+import { Catalog } from '../../shared/catalog/catalog';
 
 @Component({
   selector: 'app-street',

@@ -1,4 +1,4 @@
-import { Construction, Size } from '../../../shared/idex';
+import { Construction, Size } from '../../../shared/catalog/idex';
 
 export const CharacteristicSize: Size[] = [
   new Size('Длина платформы с допустимой нагрузкой 6 000 кг (60 кН)*, мм', '2 000 / 2 500 / 3 000 / 3 500'),

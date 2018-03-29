@@ -1,4 +1,4 @@
-import { Construction, Specification } from '../../../../shared/idex';
+import { Construction, Specification } from '../../../../shared/catalog/idex';
 
 export const Constructions: Construction[] = [
   new Construction('Мотор-редуктор'),

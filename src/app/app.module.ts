@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { CatalogModule } from './catalog/catalog.module';
 
-import { CatalogService } from './shared/catalog.service';
+import { CatalogService } from './shared/catalog/catalog.service';
 import { SectionsService } from './shared/sections/sections.service';
 import { StreetService } from './shared/street/street.service';
 import { AntiFireService } from './shared/anti-fire/anti-fire.service';
@@ -18,6 +18,7 @@ import { RolletService } from './shared/rollet/rollet.service';
 import { SpeedRollService } from './shared/speed-roll/speed-roll.service';
 import { TransshipmentService } from './shared/transshipment/transshipment.service';
 import { RampAndTableService } from './shared/ramp-and-table/ramp-and-table.service';
+import { CaruselService } from './shared/carusel/carusel.service';
 
 import { SectionsModule } from './catalog/sections/sections.module';
 import { AntiFireModule } from './catalog/anti-fire/anti-fire.module';
@@ -77,6 +78,7 @@ import { CaruselComponent } from './home/carusel/carusel.component';
     SpeedRollService,
     TransshipmentService,
     RampAndTableService,
+    CaruselService
   ],
   bootstrap: [AppComponent]
 })

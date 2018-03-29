@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject, forwardRef } from '@angular/core';
 
-import { Size, Construction } from '../../../shared/idex';
+import { Size, Construction } from '../../../shared/catalog/idex';
 import { CharacteristicSize, Constructions } from './characteristics';
 
 import { Color } from '../../../shared/ramp-and-table/color';

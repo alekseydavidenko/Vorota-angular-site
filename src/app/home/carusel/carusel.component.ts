@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, forwardRef } from '@angular/core';
+
+import { CaruselService } from '../../shared/carusel/carusel.service';
+import { Carusel } from '../../shared/carusel/carusel';
 
 @Component({
   selector: 'app-carusel',
@@ -11,7 +14,12 @@ export class CaruselComponent implements OnInit {
   public interval = 8000;
   public showIndicator = false;
 
-  constructor() {
+  public caruselSlides: Carusel[];
+
+  constructor(
+    @Inject(forwardRef(() => CaruselService))
+    private caruselService: CaruselService
+  ) {
     this.innerHeight = window.innerHeight + 'px';
 
     const getWindow = () => {
@@ -20,11 +28,11 @@ export class CaruselComponent implements OnInit {
 
     window.onresize = () => {
         this.innerHeight = getWindow();
-        console.log(this.innerHeight);
     };
   }
 
   ngOnInit() {
+    this.caruselService.gerCarusel().then(result => this.caruselSlides = result);
   }
 
 }
