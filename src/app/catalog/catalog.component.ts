@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject, forwardRef } from '@angular/core';
+import { Component, OnInit, Inject, forwardRef} from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
 import { CatalogService } from '../shared/catalog/catalog.service';
@@ -28,5 +28,4 @@ export class CatalogComponent implements OnInit {
   onSelect(selected: Catalog) {
     this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
   }
-
 }

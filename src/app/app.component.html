@@ -1,16 +1,49 @@
 <div class="wrapper">
   <section class="heder__bg">
-      <header class="container header">
+    <header class="container header">
+      <a href="#" routerLink="/home">
         <h1 class="header__logo">Ворота</h1>
-        <nav>
-          <ul class="header__items">
-            <li class="header__item"><a class="header__item-link" href="#" routerLink="/home" routerLinkActive="active">Главная</a></li>
-            <li class="header__item"><a class="header__item-link" href="#" routerLink="/catalog" routerLinkActive="active">Каталог</a></li>
-            <li class="header__item"><a class="header__item-link" href="#" routerLink="/gallery" routerLinkActive="active">Галерея</a></li>
-            <li class="header__item"><a class="header__item-link" href="#" routerLink="/contact" routerLinkActive="active">Контакты</a></li>
-          </ul>
-        </nav>
-      </header>
+      </a>
+      <nav class="d-sm-block d-none">
+        <ul class="header__items">
+          <li class="header__item">
+            <a class="header__item-link" href="#" routerLink="/home" routerLinkActive="active">Главная</a>
+          </li>
+          <li class="header__item">
+            <a class="header__item-link" href="#" routerLink="/catalog" routerLinkActive="active">Каталог</a>
+          </li>
+          <li class="header__item">
+            <a class="header__item-link" href="#" routerLink="/gallery" routerLinkActive="active">Галерея</a>
+          </li>
+          <li class="header__item">
+            <a class="header__item-link" href="#" routerLink="/contact" routerLinkActive="active">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-drop-menu d-sm-none d-block" (click)="showMenu()">
+        <span class="after-line" [class.after-line-show]="afterLine"></span>
+        <span class="main-line" [class.main-line-show]="mainLine"></span>
+        <span class="before-line" [class.before-line-show]="beforeLine"></span>
+      </button>
+    </header>
+    <div class="container drop-menu" [class.drop-menu-show]="dropMenuShow">
+      <nav>
+        <ul>
+          <li class="drop-menu__item">
+            <a class="drop-menu__item-link" href="#" routerLink="/home" routerLinkActive="active" (click)="showMenu()">Главная</a>
+          </li>
+          <li class="drop-menu__item">
+            <a class="drop-menu__item-link" href="#" routerLink="/catalog" routerLinkActive="active" (click)="showMenu()">Каталог</a>
+          </li>
+          <li class="drop-menu__item">
+            <a class="drop-menu__item-link" href="#" routerLink="/gallery" routerLinkActive="active" (click)="showMenu()">Галерея</a>
+          </li>
+          <li class="drop-menu__item">
+            <a class="drop-menu__item-link" href="#" routerLink="/contact" routerLinkActive="active" (click)="showMenu()">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </section>
   <section class="content">
     <router-outlet></router-outlet>

@@ -1,3 +1,22 @@
-<p>
-  gallery works!
-</p>
+<div class="container">
+  <h2 class="product__title title__after">Галерея наших работ</h2>
+  <div class="row gallery">
+    <div class="items col-xl-3 col-lg-4 col-md-6" *ngFor="let image of images">
+      <img src="{{ image.url }}" class="item" (click)="openModal(template, image)">
+    </div>
+  </div>
+</div>
+
+<ng-template #template>
+  <div class="modal-header">
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <img class="modal-img" src="{{selectedImage.url}}" alt="">
+    <!-- navigate -->
+    <div class="arrow-back" (click)="navigate(false)"></div>
+    <div class="arrow-forward" (click)="navigate(true)"></div>
+  </div>
+</ng-template>

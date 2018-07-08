@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import { CarouselModule } from 'ngx-bootstrap';
+import { CarouselModule, ModalModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
@@ -19,6 +19,7 @@ import { SpeedRollService } from './shared/speed-roll/speed-roll.service';
 import { TransshipmentService } from './shared/transshipment/transshipment.service';
 import { RampAndTableService } from './shared/ramp-and-table/ramp-and-table.service';
 import { CaruselService } from './shared/carusel/carusel.service';
+import { GalleryService } from './shared/gallery/gallery.service';
 
 import { SectionsModule } from './catalog/sections/sections.module';
 import { AntiFireModule } from './catalog/anti-fire/anti-fire.module';
@@ -51,6 +52,7 @@ import { CaruselComponent } from './home/carusel/carusel.component';
   ],
   imports: [
     CarouselModule.forRoot(),
+    ModalModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     CatalogModule,
@@ -78,7 +80,8 @@ import { CaruselComponent } from './home/carusel/carusel.component';
     SpeedRollService,
     TransshipmentService,
     RampAndTableService,
-    CaruselService
+    CaruselService,
+    GalleryService,
   ],
   bootstrap: [AppComponent]
 })

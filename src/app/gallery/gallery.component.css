@@ -1,0 +1,41 @@
+.gallery {
+  margin-right: 0;
+  margin-left: 0;
+}
+.items {
+  display: inline;
+  padding: 2px;
+}
+.items:hover {
+  opacity: .9;
+  transition: all 1s;
+}
+.item {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.modal-body {
+  position: relative;
+}
+.modal-img {
+  width: 100%;
+}
+.arrow-back,
+.arrow-forward {
+  position: absolute;
+  cursor: pointer;
+  width: 35px;
+  height: 60px;
+  background: rgba(0, 0, 0, .6) no-repeat center center;
+}
+.arrow-back {
+  background-image: url('../../assets/img/gallery/prev.png');
+  top: 45%;
+  left: 16px;
+}
+.arrow-forward {
+  background-image: url('../../assets/img/gallery/next.png');
+  top: 45%;
+  right: 16px;
+}

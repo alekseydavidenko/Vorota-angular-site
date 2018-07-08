@@ -3,8 +3,8 @@
     <slide class="carusel-item" *ngFor="let item of caruselSlides">
       <img class="carusel-img" src="{{ item.img }}" alt="{{ item.title }}" [style.height]="innerHeight">
       <div class="carousel-caption">
-        <h3 class="carousel-caption-title">{{ item.title }}</h3>
-        <a *ngFor="let i of item.caption" href="{{ i.link }}" class="carousel-caption-link">{{ i.title }}</a>
+        <h3 class="carousel-caption-title wow slideInLeft">{{ item.title }}</h3>
+        <a *ngFor="let i of item.caption" href="#" routerLink="{{ i.link }}" class="carousel-caption-link wow slideInRight">{{ i.title }}</a>
       </div>
     </slide>
   </carousel>

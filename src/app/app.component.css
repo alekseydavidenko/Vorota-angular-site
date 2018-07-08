@@ -3,25 +3,100 @@
   height: auto !important;
   height: 100%;
 }
-.heder__bg {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  z-index: 100;
-}
-.heder__bg {
-  background: rgba(0, 0, 0, .6);
-}
-.footer__bg {
-  background-color: #333;
-}
 .header {
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50px;
+  transition: all .4s;
+}
+.header__logo {
+  color: #fff;
+}
+.drop-menu {
+  opacity: 0;
+  height: 0;
+  transition: all .4s;
+}
+.drop-menu__item {
+  padding: 7px 0;
+}
+.drop-menu-show {
+  opacity: 1;
+  height: 175px;
+}
+.heder__bg {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, .6);
+}
+.header__items {
+  display: flex;
+}
+.header__item {
+  margin-left: 30px;
+}
+.header__item-link,
+.drop-menu__item-link {
+  color: #fff !important;
+}
+.header__item-link:hover,
+.drop-menu__item-link:hover {
+  color: #cec8c8 !important;
+}
+.active {
+  border-bottom: 1px solid #fff !important;
+}
+.btn-drop-menu {
+  width: 30px;
+  height: 35px;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  position: relative;
+  color: transparent;
+  padding: 0;
+  background: 0 0;
+  cursor: pointer;
+}
+.after-line,
+.main-line,
+.before-line {
+  width: 30px;
+  height: 3px;
+  left: 0;
+  opacity: 1;
+  transform: none;
+  background: #fff;
+  position: absolute;
+}
+.after-line {
+  top: 6px;
+  transition: all .4s;
+}
+.main-line {
+  top: 16px;
+  transition: all .4s;
+}
+.before-line {
+  top: 26px;
+  transition: all .4s;
+}
+.after-line-show {
+  top: 16px;
+  transform: rotate(-45deg);
+}
+.main-line-show {
+  left: 100px;
+  opacity: 0;
+}
+.before-line-show {
+  top: 16px;
+  transform: rotate(45deg);
 }
 .content {
   margin: 0 auto 0;
@@ -34,18 +109,6 @@
   height: 80px;
   margin-top: -80px;
 }
-.header__items {
-  display: flex;
-}
-.header__item {
-  margin-left: 30px;
-}
-.header__item-link {
-  color: #fff !important;
-}
-.header__item-link:hover {
-  color: #cec8c8 !important;
-}
-.active {
-  border-bottom: 1px solid #fff !important;
+.footer__bg {
+  background-color: #333;
 }

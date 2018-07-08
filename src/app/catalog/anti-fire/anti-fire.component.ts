@@ -24,7 +24,6 @@ export class AntiFireComponent implements OnInit {
 
   ngOnInit() {
     this.catalogService.getCatalogAntiFire().then(result => this.catalogAntiFire = result);
-    console.log(this.catalogAntiFire);
   }
   onSelect(selected: Catalog) {
     this.router.navigate([selected.rLink], { relativeTo: this.activatedRouter });
