@@ -3,6 +3,7 @@
   height: auto !important;
   height: 100%;
 }
+
 .header {
   color: #fff;
   display: flex;
@@ -11,21 +12,26 @@
   height: 50px;
   transition: all .4s;
 }
+
 .header__logo {
   color: #fff;
 }
+
 .drop-menu {
   opacity: 0;
   height: 0;
   transition: all .4s;
 }
+
 .drop-menu__item {
   padding: 7px 0;
 }
+
 .drop-menu-show {
   opacity: 1;
   height: 175px;
 }
+
 .heder__bg {
   position: fixed;
   right: 0;
@@ -34,23 +40,29 @@
   z-index: 100;
   background: rgba(0, 0, 0, .6);
 }
+
 .header__items {
   display: flex;
 }
+
 .header__item {
   margin-left: 30px;
 }
+
 .header__item-link,
 .drop-menu__item-link {
   color: #fff !important;
 }
+
 .header__item-link:hover,
 .drop-menu__item-link:hover {
   color: #cec8c8 !important;
 }
+
 .active {
   border-bottom: 1px solid #fff !important;
 }
+
 .btn-drop-menu {
   width: 30px;
   height: 35px;
@@ -63,6 +75,7 @@
   background: 0 0;
   cursor: pointer;
 }
+
 .after-line,
 .main-line,
 .before-line {
@@ -74,34 +87,42 @@
   background: #fff;
   position: absolute;
 }
+
 .after-line {
   top: 6px;
   transition: all .4s;
 }
+
 .main-line {
   top: 16px;
   transition: all .4s;
 }
+
 .before-line {
   top: 26px;
   transition: all .4s;
 }
+
 .after-line-show {
   top: 16px;
   transform: rotate(-45deg);
 }
+
 .main-line-show {
   left: 100px;
   opacity: 0;
 }
+
 .before-line-show {
   top: 16px;
   transform: rotate(45deg);
 }
+
 .content {
   margin: 0 auto 0;
   padding: 70px 0 80px;
 }
+
 .footer {
   color: #fff;
   display: flex;
@@ -109,6 +130,65 @@
   height: 80px;
   margin-top: -80px;
 }
+
 .footer__bg {
   background-color: #333;
+}
+
+/* cell fead back start */
+
+.btn-call {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  width: 150px;
+  height: 170px;
+  border-right: 3px;
+  transition: all .3s;
+}
+.btn-call:hover {
+  background-color: rgb(212, 211, 211);
+}
+.btn-call:hover .btn-call-title {
+  display: inline-table;
+}
+
+
+.btn-call-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #39b54a;
+  display: none;
+  padding: 10px 0;
+  position: relative;
+}
+
+.btn-closed::before,
+.btn-closed::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  top: 0;
+  right: 0;
+  background-color: #39b54a;
+  cursor: pointer;
+}
+
+.btn-closed::before {
+  transform: rotate(45deg);
+}
+
+.btn-closed::after {
+  transform: rotate(-45deg);
+}
+
+.cell-img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
 }
