@@ -1,0 +1,83 @@
+/* cell fead back start */
+
+.btn-call {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  width: 150px;
+  height: 170px;
+  border-right: 3px;
+  transition: all .3s;
+}
+
+.btn-call:hover {
+  background-color: rgb(212, 211, 211);
+}
+
+.btn-call:hover .btn-call-title {
+  display: inline-table;
+}
+
+.btn-call-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #39b54a;
+  display: none;
+  padding: 10px 0;
+  position: relative;
+}
+
+.btn-closed::before,
+.btn-closed::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  top: 0;
+  right: 0;
+  background-color: #39b54a;
+  cursor: pointer;
+}
+
+.btn-closed::before {
+  transform: rotate(45deg);
+}
+
+.btn-closed::after {
+  transform: rotate(-45deg);
+}
+
+.cell-img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+/* cell fead back end */
+
+/* modal fead back start */
+
+.modal-header {
+  background-color: #fff;
+  border-radius: 3px 3px 0 0;
+}
+
+.modal-body {
+  background-color: #fff;
+  border-radius: 0 0 3px 3px;
+}
+
+.modal-header .close.pull-right {
+  color: #000;
+  font-size: 1.5rem;
+}
+.modal-header .close.pull-right span {
+  top: 5px;
+  left: 10px;
+}
+
+/* modal fead back end */

@@ -39,6 +39,7 @@ import { AluminiumModule } from './catalog/rollet/aluminium/aluminium.module';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { CaruselComponent } from './home/carusel/carusel.component';
+import { ModalFeadBackComponent } from './modal-fead-back/modal-fead-back.component';
 
 
 
@@ -49,6 +50,7 @@ import { CaruselComponent } from './home/carusel/carusel.component';
     HomeComponent,
     GalleryComponent,
     CaruselComponent,
+    ModalFeadBackComponent,
   ],
   imports: [
     CarouselModule.forRoot(),
